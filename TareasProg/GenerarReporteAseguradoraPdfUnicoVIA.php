@@ -491,7 +491,7 @@ if ($html !== '0') {
 
 	if (file_exists($dir)) { ?>
 
-		<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/DescargarUnico.php?archivo=<?= $nombreFile ?>');"><b>Descargar Poliza</b></a>
+		<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('DescargarUnico.php?archivo=<?= $nombreFile ?>');"><b>Descargar Poliza</b></a>
 
 <? }
 }
