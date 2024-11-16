@@ -25,7 +25,7 @@ function enviarEmailHtml($dist_id)
 	$fechasd = $ed[2] . "-" . $ed[1] . "-" . $ed[0];
 	$fecha1 = $ed[0] . "-" . $ed[1] . "-" . $ed[2];
 
-/*	$mail = new PHPMailer;
+	/*	$mail = new PHPMailer;
 	$mail->isSMTP();
 	$mail->Host = 'multiseguros.com.do';
 	$mail->SMTPAuth = true;
@@ -37,17 +37,17 @@ function enviarEmailHtml($dist_id)
 	$mail->Port = '465';
 	$mail->SMTPDebug = true;
 */
-$mail = new PHPMailer;
-$mail->isSMTP();
-$mail->Host = 'mail.segurosexpress.com';
-$mail->SMTPAuth = true;
-$mail->Username = 'operaciones@segurosexpress.com';
-$mail->Password = 'oCgYS@7yIaOO';
-$mail->SMTPSecure = 'ssl';
-$mail->From = 'operaciones@segurosexpress.com';
-$mail->FromName = 'MultiSeguros';
-$mail->Port = '465';
-$mail->SMTPDebug = true;
+	$mail = new PHPMailer;
+	$mail->isSMTP();
+	$mail->Host = 'mail.segurosexpress.com';
+	$mail->SMTPAuth = true;
+	$mail->Username = 'operaciones@segurosexpress.com';
+	$mail->Password = 'oCgYS@7yIaOO';
+	$mail->SMTPSecure = 'ssl';
+	$mail->From = 'operaciones@segurosexpress.com';
+	$mail->FromName = 'MultiSeguros';
+	$mail->Port = '465';
+	$mail->SMTPDebug = true;
 
 	$query = mysql_query("SELECT * FROM suplidores WHERE id_seguro ='" . $dist_id . "' LIMIT 1");
 	$row = mysql_fetch_array($query);
@@ -72,7 +72,7 @@ $mail->SMTPDebug = true;
 	}*/
 
 
-	$archivo1 = '/ws6_3_8/TareasProg/Excel/ASEGURADORA/' . $dist_id . '/MS_RDV_' . $fechasd . '.xls';
+	$archivo1 = '/MultisegurosApi/TareasProg/Excel/ASEGURADORA/' . $dist_id . '/MS_RDV_' . $fechasd . '.xls';
 	$archivo2 = "/excelFiles/$dist_id/MS_EM_$fechasd.xlsx";
 	echo "$archivo1,$archivo2";
 
@@ -128,38 +128,39 @@ while ($p = mysql_fetch_array($sq)) {
 	}
 }
 
-function enviarEmailSendiu($dist_id){
-		//explode
-		$fech = fecha_despues('' . date('d/m/Y') . '', -1);
-		$ed = explode('/', $fech);
-		$fechasd = $ed[2] . "-" . $ed[1] . "-" . $ed[0];
-		$fecha1 = $ed[0] . "-" . $ed[1] . "-" . $ed[2];
+function enviarEmailSendiu($dist_id)
+{
+	//explode
+	$fech = fecha_despues('' . date('d/m/Y') . '', -1);
+	$ed = explode('/', $fech);
+	$fechasd = $ed[2] . "-" . $ed[1] . "-" . $ed[0];
+	$fecha1 = $ed[0] . "-" . $ed[1] . "-" . $ed[2];
 
-		$query = mysql_query("SELECT * FROM suplidores WHERE id_seguro ='" . $dist_id . "' LIMIT 1");
-		$row = mysql_fetch_array($query);
+	$query = mysql_query("SELECT * FROM suplidores WHERE id_seguro ='" . $dist_id . "' LIMIT 1");
+	$row = mysql_fetch_array($query);
 
-		$desg = explode(",", $row['email_finanzas']);
-		$cant = count($desg);
-		$cant = $cant - 1;
-		if ($_GET['DEBUG']) {
-			echo "DEBUG";
-		} else {
-			for ($i = 0; $i <= $cant; $i++) {
-				$email = "" . $desg[$i] . "";
-			}
+	$desg = explode(",", $row['email_finanzas']);
+	$cant = count($desg);
+	$cant = $cant - 1;
+	if ($_GET['DEBUG']) {
+		echo "DEBUG";
+	} else {
+		for ($i = 0; $i <= $cant; $i++) {
+			$email = "" . $desg[$i] . "";
 		}
+	}
 
-		$email = 'odalisdabreu@gmail.com';
-		$emailCC = 'grullon.jose@gmail.com';
+	$email = 'odalisdabreu@gmail.com';
+	$emailCC = 'grullon.jose@gmail.com';
 
-		$archivo1 = '/ws6_3_8/TareasProg/Excel/ASEGURADORA/' . $dist_id . '/MS_RDV_' . $fechasd . '.xls';
-		$archivo2 = "/excelFiles/$dist_id/MS_EM_$fechasd.xlsx";
-		echo "$archivo1,$archivo2";
-		$subject = 'Ventas de ' . NomAseg($dist_id) . ' del ' . $fecha1 . ' ';
+	$archivo1 = '/MultisegurosApi/TareasProg/Excel/ASEGURADORA/' . $dist_id . '/MS_RDV_' . $fechasd . '.xls';
+	$archivo2 = "/excelFiles/$dist_id/MS_EM_$fechasd.xlsx";
+	echo "$archivo1,$archivo2";
+	$subject = 'Ventas de ' . NomAseg($dist_id) . ' del ' . $fecha1 . ' ';
 
-		$curl = curl_init();
+	$curl = curl_init();
 
-		curl_setopt_array($curl, array(
+	curl_setopt_array($curl, array(
 		CURLOPT_URL => 'https://api.ckpnd.com:5001/v1/email',
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_ENCODING => '',
@@ -168,16 +169,16 @@ function enviarEmailSendiu($dist_id){
 		CURLOPT_FOLLOWLOCATION => true,
 		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 		CURLOPT_CUSTOMREQUEST => 'POST',
-		CURLOPT_POSTFIELDS =>'{
+		CURLOPT_POSTFIELDS => '{
 									"to": [
 										{
-											"email": "'.$email.'"
+											"email": "' . $email . '"
 										}
 									],
 									"options": {
 										"cc": [
 											{
-												"email": "'.$emailCC.'"
+												"email": "' . $emailCC . '"
 											}
 										]
 									},
@@ -189,7 +190,7 @@ function enviarEmailSendiu($dist_id){
 										"email": "operaciones@segurosexpress.com",
 										"name": "Multiseguros"
 									},
-									"subject": "'.$subject.'",
+									"subject": "' . $subject . '",
 									"body": "
 											Buenos d&iacute;as, el archivo de las ventas esta anexado.
 											<p>
@@ -205,10 +206,10 @@ function enviarEmailSendiu($dist_id){
 									",
 									"attachments": [
 										{
-											"path": "'.realpath(__DIR__ . '/../../../') . $archivo1.'"
+											"path": "' . realpath(__DIR__ . '/../../../') . $archivo1 . '"
 										},
 										{
-											"path": "'.realpath(__DIR__ . '/../../../') . $archivo2.'"
+											"path": "' . realpath(__DIR__ . '/../../../') . $archivo2 . '"
 										}
 									]
 								}',
@@ -216,12 +217,10 @@ function enviarEmailSendiu($dist_id){
 			'Authorization: Bearer 3f6cad2f.0f9f49318468647529d45efa',
 			'Content-Type: application/json'
 		),
-		));
+	));
 
-		$response = curl_exec($curl);
+	$response = curl_exec($curl);
 
-		curl_close($curl);
-		echo $response;
-
-
+	curl_close($curl);
+	echo $response;
 }

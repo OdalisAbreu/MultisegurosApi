@@ -2,7 +2,7 @@
 
 //EJEMPLO 8
 $filename = $_GET['fecha'] . ".pdf";
-$file_example = $_SERVER['DOCUMENT_ROOT'] . "PDF/CLIENTES/" . $_GET['user_id'] . "/" . $filename . "";
+$file_example = $_SERVER['DOCUMENT_ROOT'] . "/MultisegurosApi/TareasProg/PDF/CLIENTES/" . $_GET['user_id'] . "/" . $filename . "";
 
 
 header('Content-Description: File Transfer');
