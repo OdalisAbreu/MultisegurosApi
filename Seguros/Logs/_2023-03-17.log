@@ -1,0 +1,47 @@
+
+	08:21:32 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	08:51:43 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 2,475.00
+	08:52:04 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 995.00
+	09:02:50 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 2,475.00
+	09:27:48 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	09:37:58 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	09:39:00 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.36 Segs. ==>	MONTO: 375.00
+	09:47:26 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 695.00
+	09:54:55 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 275.00
+	09:55:44 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 175.00
+	09:59:03 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 3,850.00
+	10:06:57 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 275.00
+	10:24:24 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	10:32:35 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.06 Segs. ==>	MONTO: 375.00
+	10:58:53 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 1,875.00
+	11:11:36 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 2,290.00
+	11:37:01 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	11:49:40 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	11:51:01 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	11:59:11 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	12:13:14 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	12:29:20 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 695.00
+	13:20:23 [SEGURO:00] CLIENTE[  89  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 695.00
+	13:26:27 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	13:39:20 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 695.00
+	13:42:07 [SEGURO:11] CLIENTE[  63  ] ==>	ASEG: No bal. disponible      ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 8,690.00
+	14:06:17 [SEGURO:11] CLIENTE[  63  ] ==>	ASEG: No bal. disponible      ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 8,690.00
+	14:21:32 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	14:30:41 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.10 Segs. ==>	MONTO: 375.00
+	15:03:32 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 175.00
+	15:41:58 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.05 Segs. ==>	MONTO: 375.00
+	16:08:47 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	16:12:06 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 175.00
+	16:17:03 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	16:20:26 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 175.00
+	16:29:55 [SEGURO:00] CLIENTE[  34  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.05 Segs. ==>	MONTO: 2,475.00
+	16:40:04 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	17:00:51 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 695.00
+	17:04:20 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,735.00
+	17:07:13 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	17:15:24 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	18:18:24 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 695.00
+	18:27:20 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 1,875.00
+	18:37:21 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	18:57:15 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 2,475.00
+	20:48:15 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 1,735.00

@@ -1,0 +1,19 @@
+
+	08:37:12 [SEGURO:11] CLIENTE[  81  ] ==>	ASEG: No bal. disponible      ==> 	TIEMPO: 0.02 Segs. ==>	MONTO: 1,875.00
+	08:55:38 [SEGURO:00] CLIENTE[  81  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	09:35:22 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 995.00
+	09:52:43 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	10:08:32 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	10:51:23 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	10:56:51 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	11:18:03 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	11:37:28 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 2,475.00
+	11:40:25 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	12:27:59 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	14:38:06 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	15:22:22 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	15:23:07 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.06 Segs. ==>	MONTO: 695.00
+	15:58:58 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	16:14:34 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 695.00
+	16:23:23 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 995.00
+	16:56:15 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00

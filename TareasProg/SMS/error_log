@@ -1,0 +1,4 @@
+[16-May-2021 13:36:18 America/Anguilla] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/multiseguroscom/public_html/ws6_3_8/TareasProg/SMS/GenerateSMS.php on line 33
+[16-May-2021 13:36:18 America/Anguilla] PHP Warning:  mysql_query(): A link to the server could not be established in /home/multiseguroscom/public_html/ws6_3_8/TareasProg/SMS/GenerateSMS.php on line 33
+[16-May-2021 13:36:18 America/Anguilla] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/multiseguroscom/public_html/ws6_3_8/TareasProg/SMS/GenerateSMS.php on line 39
+[16-May-2021 13:36:58 America/Anguilla] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/multiseguroscom/public_html/ws6_3_8/TareasProg/SMS/GenerateSMS.php on line 39

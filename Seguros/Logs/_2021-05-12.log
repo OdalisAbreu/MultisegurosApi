@@ -1,0 +1,23 @@
+
+	09:04:34 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 3,350.00
+	09:06:48 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.06 Segs. ==>	MONTO: 375.00
+	09:35:08 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	12:02:26 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	12:02:41 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.20 Segs. ==>	MONTO: 695.00
+	12:40:22 [SEGURO:00] CLIENTE[  54  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	12:48:35 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	12:55:41 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 1.02 Segs. ==>	MONTO: 175.00
+	13:04:40 [SEGURO:00] CLIENTE[  54  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.26 Segs. ==>	MONTO: 375.00
+	14:44:13 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	15:55:48 [SEGURO:00] CLIENTE[  54  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.04 Segs. ==>	MONTO: 375.00
+	16:03:45 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.25 Segs. ==>	MONTO: 375.00
+	16:15:21 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.08 Segs. ==>	MONTO: 375.00
+	16:17:56 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	16:41:41 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.77 Segs. ==>	MONTO: 375.00
+	16:58:25 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	18:11:25 [SEGURO:00] CLIENTE[  34  ] ==>	ASEG: ATRIO Seguros           ==> 	TIEMPO: 0.35 Segs. ==>	MONTO: 375.00
+	19:05:16 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.06 Segs. ==>	MONTO: 375.00
+	19:10:43 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.05 Segs. ==>	MONTO: 375.00
+	19:24:31 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 375.00
+	19:38:01 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.03 Segs. ==>	MONTO: 1,875.00
+	21:52:03 [SEGURO:00] CLIENTE[  20  ] ==>	ASEG: Dominicana de Seguros   ==> 	TIEMPO: 0.17 Segs. ==>	MONTO: 695.00

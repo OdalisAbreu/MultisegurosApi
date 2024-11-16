@@ -1,0 +1,50 @@
+   
+  
+  <table cellpadding="5" cellspacing="3"> 
+	<tr>
+    	<td colspan="6" align="center" style="font-size:25px; width:700px"><b>Ventas de Seguros</b></td>
+    </tr>
+	<tr>
+    	<td colspan="6" align="center" style="font-size:14px">
+		<b>Desde</b>
+		09-07-2019
+		<b>Hasta</b>
+		09-07-2019
+		</td>
+    </tr>
+    <tr>
+    	<td colspan="2" style="background-color:#D11B1E; font-size:17px; color:#FFF; width:300px"><b>Nombre</b></td>
+        <td colspan="2" style="background-color:#D11B1E; font-size:17px; color:#FFF; width:300px"><b>Monto</b></td>
+        <td colspan="2" style="background-color:#D11B1E; font-size:17px; color:#FFF; width:300px"><b>Costo</b></td>
+    </tr><tr>
+    <td colspan="2" style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:14px; ">Dominicana de Seguros </td>
+    <td colspan="2" style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:14px; ">$RD 27,780.00</td>
+    <td colspan="2" style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:14px; ">$RD 15,492.41</td>
+</tr> <tr>
+    	<td colspan="2">&nbsp;</td>
+        <td colspan="2" style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:16px;"><b>$RD 27,780.00</b></td>
+        <td colspan="2" style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:16px;"><b>$RD 15,492.41</b></td>
+    </tr>
+</table>
+<br><br><table cellpadding="5" cellspacing="3" > 
+	<tr>
+    	<td colspan="6" align="center" style="font-size:25px; width:700px"><b>Ventas de Servicios Opcionales</b></td>
+    </tr>
+	<tr>
+    	<td colspan="6" align="center" style="font-size:14px">
+		<b>Desde</b>
+		09-07-2019
+		<b>Hasta</b>
+		09-07-2019
+		</td>
+    </tr>
+    <tr>
+    	<td colspan="2" style="background-color:#D11B1E; font-size:17px; color:#FFF; width:300px"><b>Nombre</b></td>
+        <td colspan="2" style="background-color:#D11B1E; font-size:17px; color:#FFF; width:300px"><b>Monto</b></td>
+        <td colspan="2" style="background-color:#D11B1E; font-size:17px; color:#FFF; width:300px"><b>Costo</b></td>
+    </tr><tr>
+    	<td colspan="2">&nbsp;</td>
+        <td colspan="2"  style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:16px;"><b>$RD 0.00</b></td>
+        <td colspan="2"  style="border-bottom:solid 1px #E3E3E3; background-color:#F2F2F2; font-size:16px;"><b>$RD 0.00</b></td>
+    </tr>
+</table>

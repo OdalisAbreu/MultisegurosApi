@@ -1,0 +1,1110 @@
+   
+  <table cellpadding="4" cellspacing="0">
+  	
+	<tr>
+		<td colspan="17"> 
+		
+		
+		
+		<table width="100%" cellpadding="9" cellspacing="0">
+	<tr>
+    	<td colspan="5">
+		
+		<b style="font-size: 60px; color: #d9261c;">Multi</b><b style="font-size: 60px; color: #828282;">Seguros 
+			</b>	
+			</td>
+    	
+   
+	  <td align="center" colspan="6">
+		  <font style="font-size: 22px; color: #828282; font-weight: bold;">
+		  	<b>REPORTE DIARIO DE VENTAS</b>
+		  </font>
+		  
+		  <br>
+		  <font style="font-size: 18px; color: #828282; font-weight: bold;">
+		  	Dominicana de Seguros
+		  <font><br>
+		  <font style="font-size: 14px; color: #828282; font-weight: bold;">
+		  	<b>Desde:</b> 09/07/2019 <b>Hasta:</b> 09/07/2019
+			</font>
+	  </td>
+	  <td align="center" colspan="3"> 
+	  	<b style="font-size: 19px;">Fecha del Reporte</b><br>
+		<font style="font-size: 14px; color: #828282; font-weight: bold;">
+			10-Jul-19 1:01 AM
+		</font>
+	  </td>
+  </tr>
+	
+</table>
+
+
+		</td>
+	</tr>
+	
+	
+   <tr style="background-color:#B1070A; color:#FFFFFF; font-size:14px;">
+   		<td></td>
+        <td>No. Poliza</td>
+        <td>Nombres</td>
+        <td>Apellidos</td>
+        <td>C&eacute;dula</td>
+		<td>Direcci&oacute;n</td>
+        <td>Ciudad</td>
+        <td>Tel&eacute;fono</td>
+        <td>Marca</td>
+        <td>Modelo</td>
+        <td>A&ntilde;o</td>
+        <td>Chassis</td>
+        <td>Placa</td>
+        <td>Fecha Emisi&oacute;n</td>
+		<td>Agencia</td>
+        <td width="250px">Inicio Vigencia</td>
+        <td width="250px">Fin Vigencia</td>
+        <td>Prima</td>
+   </tr> 
+	<tr>
+   		<td>1</td>
+        <td  style="width:250px">AUTO-MSD-015176</td>
+        <td>JOSE LUIS</td>
+        <td>CABRERA DURAN</td>
+        <td  style="width:250px">224-0072844-4</td>
+		<td  style="width:350px">CABRERA DURAN</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-424-4627</td>
+        <td style="width:250px">MITSUBISHI           </td>
+        <td style="width:250px">GALANT</td>
+        <td>2001</td>
+        <td>EA1A0204108</td>
+        <td>A500523</td>
+        <td style="width:250px">09-Jul-19 8:20 PM</td>
+		<td>17542</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$695.00</td>
+   </tr>
+	<tr>
+   		<td>2</td>
+        <td  style="width:250px">AUTO-MSD-015175</td>
+        <td>FRANK FELIX</td>
+        <td>CASTILLO VILLA</td>
+        <td  style="width:250px">097-0028228-9</td>
+		<td  style="width:350px">CASTILLO VILLA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-846-3341</td>
+        <td style="width:250px">BAJAJ</td>
+        <td style="width:250px"></td>
+        <td>2017</td>
+        <td>MD2A21BZ3HWG48745</td>
+        <td>K1154757</td>
+        <td style="width:250px">09-Jul-19 7:19 PM</td>
+		<td>17541</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>3</td>
+        <td  style="width:250px">AUTO-MSD-015174</td>
+        <td>LEONEL</td>
+        <td>VALERIO ROSARIO</td>
+        <td  style="width:250px">001-1936495-8</td>
+		<td  style="width:350px">VALERIO ROSARIO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-846-8926</td>
+        <td style="width:250px">X-1000               </td>
+        <td style="width:250px"></td>
+        <td>2014</td>
+        <td>TBL20P107FHA46041</td>
+        <td>K0523190</td>
+        <td style="width:250px">09-Jul-19 7:19 PM</td>
+		<td>17540</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>4</td>
+        <td  style="width:250px">AUTO-MSD-015173</td>
+        <td>ISIDRO</td>
+        <td>GUZMAN REYES</td>
+        <td  style="width:250px">027-0021011-1</td>
+		<td  style="width:350px">GUZMAN REYES</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-521-2474</td>
+        <td style="width:250px">PGO                  </td>
+        <td style="width:250px">PGO </td>
+        <td>2014</td>
+        <td>RFVCPCPC5F1017806</td>
+        <td>K1777207</td>
+        <td style="width:250px">09-Jul-19 7:19 PM</td>
+		<td>17539</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>5</td>
+        <td  style="width:250px">AUTO-MSD-015172</td>
+        <td>VICTOR ANTONIO</td>
+        <td>CASTILLO CLAVER</td>
+        <td  style="width:250px">224-0077117-0</td>
+		<td  style="width:350px">CASTILLO CLAVER</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-444-0464</td>
+        <td style="width:250px">BAJAJ</td>
+        <td style="width:250px">BAJAJ</td>
+        <td>2016</td>
+        <td>MD2A76AZ2GWM44496</td>
+        <td>K0739930</td>
+        <td style="width:250px">09-Jul-19 6:18 PM</td>
+		<td>17538</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>6</td>
+        <td  style="width:250px">AUTO-MSD-015171</td>
+        <td>JENNIFER ALTAGRACIA</td>
+        <td>BAEZ PAULINO</td>
+        <td  style="width:250px">223-0039425-5</td>
+		<td  style="width:350px">BAEZ PAULINO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-903-0383</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">SWIFT</td>
+        <td>2008</td>
+        <td>ZC71S424527</td>
+        <td>A619907</td>
+        <td style="width:250px">09-Jul-19 6:18 PM</td>
+		<td>17537</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$1,875.00</td>
+   </tr>
+	<tr>
+   		<td>7</td>
+        <td  style="width:250px">AUTO-MSD-015170</td>
+        <td>DANNY JOSE</td>
+        <td>VALENTIN VILLAR</td>
+        <td  style="width:250px">054-0144301-4</td>
+		<td  style="width:350px">VALENTIN VILLAR</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-601-6464</td>
+        <td style="width:250px">BAJAJ</td>
+        <td style="width:250px">PLATINA 100</td>
+        <td>2019</td>
+        <td>MD2A76AY7KWK45315</td>
+        <td>00000</td>
+        <td style="width:250px">09-Jul-19 5:17 PM</td>
+		<td>17536</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>8</td>
+        <td  style="width:250px">AUTO-MSD-015169</td>
+        <td>EDUAR YESER</td>
+        <td>TORRES</td>
+        <td  style="width:250px">402-2777033-2</td>
+		<td  style="width:350px">TORRES</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-837-4866</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px">LEAD 100</td>
+        <td>1994</td>
+        <td>JF061107432</td>
+        <td>EN PROCESSO</td>
+        <td style="width:250px">09-Jul-19 4:16 PM</td>
+		<td>17535</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>9</td>
+        <td  style="width:250px">AUTO-MSD-015168</td>
+        <td>JERINSON MANUEL</td>
+        <td>CANDELARIO RAMIREZ</td>
+        <td  style="width:250px">223-0029561-9</td>
+		<td  style="width:350px">CANDELARIO RAMIREZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-393-7656</td>
+        <td style="width:250px">DAIHATSU             </td>
+        <td style="width:250px"></td>
+        <td>2000</td>
+        <td>S100V115603</td>
+        <td>I028291</td>
+        <td style="width:250px">09-Jul-19 4:16 PM</td>
+		<td>17534</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$695.00</td>
+   </tr>
+	<tr>
+   		<td>10</td>
+        <td  style="width:250px">AUTO-MSD-015167</td>
+        <td>IROSHIMA</td>
+        <td>BATISTA SANCHEZ</td>
+        <td  style="width:250px">012-0117789-4</td>
+		<td  style="width:350px">BATISTA SANCHEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-930-4584</td>
+        <td style="width:250px">YAMAHA               </td>
+        <td style="width:250px">YAMAHA </td>
+        <td>1990</td>
+        <td>3YJ2608287</td>
+        <td>XXXX</td>
+        <td style="width:250px">09-Jul-19 4:16 PM</td>
+		<td>17533</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>11</td>
+        <td  style="width:250px">AUTO-MSD-015166</td>
+        <td>MATEO</td>
+        <td>RAMIREZ DE LEON</td>
+        <td  style="width:250px">010-0053305-7</td>
+		<td  style="width:350px">RAMIREZ DE LEON</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-756-7813</td>
+        <td style="width:250px">Z300</td>
+        <td style="width:250px">Z300</td>
+        <td>2017</td>
+        <td>YH164FMLG7520029</td>
+        <td>K1693228</td>
+        <td style="width:250px">09-Jul-19 4:16 PM</td>
+		<td>17532</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>12</td>
+        <td  style="width:250px">AUTO-MSD-015165</td>
+        <td>LEONEL</td>
+        <td>LINAREZ LAGRULE</td>
+        <td  style="width:250px">402-2679462-2</td>
+		<td  style="width:350px">LINAREZ LAGRULE</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-650-6363</td>
+        <td style="width:250px">SUCATI</td>
+        <td style="width:250px">SUCATI</td>
+        <td>2019</td>
+        <td>LBEJLX14TKA120149</td>
+        <td>K1766058</td>
+        <td style="width:250px">09-Jul-19 3:15 PM</td>
+		<td>17531</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>13</td>
+        <td  style="width:250px">AUTO-MSD-015164</td>
+        <td>DINAURY</td>
+        <td>MERAN</td>
+        <td  style="width:250px">223-0168406-8</td>
+		<td  style="width:350px">MERAN</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">849-276-8618</td>
+        <td style="width:250px">BM</td>
+        <td style="width:250px">BM</td>
+        <td>2005</td>
+        <td>RIVASXYMT05030851</td>
+        <td>K0126920</td>
+        <td style="width:250px">09-Jul-19 3:15 PM</td>
+		<td>17530</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>14</td>
+        <td  style="width:250px">AUTO-MSD-015163</td>
+        <td>JISELA</td>
+        <td>SALOMON JOSEPH</td>
+        <td  style="width:250px">402-2103531-0</td>
+		<td  style="width:350px">SALOMON JOSEPH</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-515-8198</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">AX100</td>
+        <td>2007</td>
+        <td>LC6PAGA1670816583</td>
+        <td>N249912</td>
+        <td style="width:250px">09-Jul-19 3:15 PM</td>
+		<td>17529</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>15</td>
+        <td  style="width:250px">AUTO-MSD-015162</td>
+        <td>YOAN MANUEL</td>
+        <td>FELIZ GERMAN</td>
+        <td  style="width:250px">402-0900457-7</td>
+		<td  style="width:350px">FELIZ GERMAN</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-546-0778</td>
+        <td style="width:250px">KEEWAY               </td>
+        <td style="width:250px">KEEWAY </td>
+        <td>2019</td>
+        <td>LBBPEK5GXHB800087</td>
+        <td>XXXX</td>
+        <td style="width:250px">09-Jul-19 3:15 PM</td>
+		<td>17528</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>16</td>
+        <td  style="width:250px">AUTO-MSD-015161</td>
+        <td>JOEL</td>
+        <td>BONILLA NUNEZ</td>
+        <td  style="width:250px">061-0029272-8</td>
+		<td  style="width:350px">BONILLA NUNEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-765-5766</td>
+        <td style="width:250px">GALAXI               </td>
+        <td style="width:250px">GALAXI </td>
+        <td>2012</td>
+        <td>LWPPCJL2T20122175</td>
+        <td>EN PROCESO</td>
+        <td style="width:250px">09-Jul-19 3:15 PM</td>
+		<td>17527</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>17</td>
+        <td  style="width:250px">AUTO-MSD-015160</td>
+        <td>PEDRO LUIS</td>
+        <td>VALDEZ MENDEZ</td>
+        <td  style="width:250px">010-0095579-7</td>
+		<td  style="width:350px">VALDEZ MENDEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-838-3830</td>
+        <td style="width:250px">LONCIN               </td>
+        <td style="width:250px">LX125</td>
+        <td>2016</td>
+        <td>PPLCX24D100842</td>
+        <td>XXXX</td>
+        <td style="width:250px">09-Jul-19 3:15 PM</td>
+		<td>17526</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>18</td>
+        <td  style="width:250px">AUTO-MSD-015159</td>
+        <td>JUAN JOSE</td>
+        <td>DE LA ROSA</td>
+        <td  style="width:250px">012-0001999-8</td>
+		<td  style="width:350px">DE LA ROSA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-801-0447</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">AX100</td>
+        <td>2016</td>
+        <td>LC6PAGA11G0011820</td>
+        <td>K0645841</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17525</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>19</td>
+        <td  style="width:250px">AUTO-MSD-015158</td>
+        <td>WILKIN</td>
+        <td>SENCLE</td>
+        <td  style="width:250px">402-4189524-8</td>
+		<td  style="width:350px">SENCLE</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-214-8730</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">AX100</td>
+        <td>2003</td>
+        <td>B11A186002</td>
+        <td>K0345667</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17524</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>20</td>
+        <td  style="width:250px">AUTO-MSD-015157</td>
+        <td>JOSE</td>
+        <td>VILLILO RAMIREZ</td>
+        <td  style="width:250px">001-0559765-2</td>
+		<td  style="width:350px">VILLILO RAMIREZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-592-0021</td>
+        <td style="width:250px">LONCIN               </td>
+        <td style="width:250px">LONCIN </td>
+        <td>2018</td>
+        <td>LLCLTK3A7JCK00578</td>
+        <td>K1640529</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17523</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>21</td>
+        <td  style="width:250px">AUTO-MSD-015156</td>
+        <td>RAMON DAVID</td>
+        <td>POPA MARTINEZ</td>
+        <td  style="width:250px">402-2264832-7</td>
+		<td  style="width:350px">POPA MARTINEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-838-3803</td>
+        <td style="width:250px">LONCIN               </td>
+        <td style="width:250px">LONCIN </td>
+        <td>2014</td>
+        <td>LLCLPP203EE111160</td>
+        <td>K0679340</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17522</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>22</td>
+        <td  style="width:250px">AUTO-MSD-015155</td>
+        <td>DANIEL ANTONIO</td>
+        <td>POLANCO PEGUERO</td>
+        <td  style="width:250px">402-2344663-0</td>
+		<td  style="width:350px">POLANCO PEGUERO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-452-4078</td>
+        <td style="width:250px">TVS                  </td>
+        <td style="width:250px">TVS </td>
+        <td>2018</td>
+        <td>MD634KE64J2A90524</td>
+        <td>EN PROCESO</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17521</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>23</td>
+        <td  style="width:250px">AUTO-MSD-015154</td>
+        <td>FRANCISCO</td>
+        <td>CASTRO</td>
+        <td  style="width:250px">402-4345591-8</td>
+		<td  style="width:350px">CASTRO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-367-1918</td>
+        <td style="width:250px">Z3000</td>
+        <td style="width:250px">CG150</td>
+        <td>2019</td>
+        <td>LBEJLX14TKA120468</td>
+        <td>K1760565</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17520</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>24</td>
+        <td  style="width:250px">AUTO-MSD-015153</td>
+        <td>LUIS GUILLERMO</td>
+        <td>BELTRE LEBRON</td>
+        <td  style="width:250px">017-0021050-1</td>
+		<td  style="width:350px">BELTRE LEBRON</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-324-4211</td>
+        <td style="width:250px">LONCIN               </td>
+        <td style="width:250px">LONCIN </td>
+        <td>2009</td>
+        <td>LLCLPP2009E103443</td>
+        <td>N621998</td>
+        <td style="width:250px">09-Jul-19 2:14 PM</td>
+		<td>17519</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>25</td>
+        <td  style="width:250px">AUTO-MSD-015152</td>
+        <td>ISAHIAS</td>
+        <td>NINA TAVAREZ</td>
+        <td  style="width:250px">402-2127561-9</td>
+		<td  style="width:350px">NINA TAVAREZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-917-6380</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px">CR-V</td>
+        <td>2012</td>
+        <td>5J6RM4H54CL054501</td>
+        <td>X464304</td>
+        <td style="width:250px">09-Jul-19 1:13 PM</td>
+		<td>17518</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$695.00</td>
+   </tr>
+	<tr>
+   		<td>26</td>
+        <td  style="width:250px">AUTO-MSD-015151</td>
+        <td>RANDY ALBERTO</td>
+        <td>SANTANA HERNANDEZ</td>
+        <td  style="width:250px">402-1137181-6</td>
+		<td  style="width:350px">SANTANA HERNANDEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-704-0778</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px">C90</td>
+        <td>1994</td>
+        <td>HA022610206</td>
+        <td>K0788572</td>
+        <td style="width:250px">09-Jul-19 1:13 PM</td>
+		<td>17517</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>27</td>
+        <td  style="width:250px">AUTO-MSD-015150</td>
+        <td>LUIS GUILLERMO</td>
+        <td>BELTRE LEBRON</td>
+        <td  style="width:250px">017-0021050-1</td>
+		<td  style="width:350px">BELTRE LEBRON</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-838-3830</td>
+        <td style="width:250px">LONCIN               </td>
+        <td style="width:250px">LONCIN </td>
+        <td>2013</td>
+        <td>LLCLPP208DE108513</td>
+        <td>K0175912</td>
+        <td style="width:250px">09-Jul-19 1:13 PM</td>
+		<td>17516</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>28</td>
+        <td  style="width:250px">AUTO-MSD-015149</td>
+        <td>DELIA BIVIANA GARCIA LOPEZ</td>
+        <td>GARCIA LOPEZ</td>
+        <td  style="width:250px">037-0063001-9</td>
+		<td  style="width:350px">GARCIA LOPEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-730-1116</td>
+        <td style="width:250px">YAMAHA               </td>
+        <td style="width:250px"></td>
+        <td>1994</td>
+        <td>3KJ7946927</td>
+        <td>N444650</td>
+        <td style="width:250px">09-Jul-19 12:12 PM</td>
+		<td>17515</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>29</td>
+        <td  style="width:250px">AUTO-MSD-015148</td>
+        <td>LISALDY</td>
+        <td>ASENCIO SIERRA</td>
+        <td  style="width:250px">402-2550538-3</td>
+		<td  style="width:350px">ASENCIO SIERRA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-559-1742</td>
+        <td style="width:250px">YAMAHA               </td>
+        <td style="width:250px"></td>
+        <td>1994</td>
+        <td>3KJ7957628</td>
+        <td>K0210758</td>
+        <td style="width:250px">09-Jul-19 12:12 PM</td>
+		<td>17514</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>30</td>
+        <td  style="width:250px">AUTO-MSD-015147</td>
+        <td>BRYAN</td>
+        <td>TAVERAS BARREIRO</td>
+        <td  style="width:250px">223-0134203-0</td>
+		<td  style="width:350px">TAVERAS BARREIRO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-363-3635</td>
+        <td style="width:250px">GATO</td>
+        <td style="width:250px">GATO</td>
+        <td>2016</td>
+        <td>LRPRP1B00GA000048</td>
+        <td>K11114228</td>
+        <td style="width:250px">09-Jul-19 12:12 PM</td>
+		<td>17513</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Ene-20</td>
+        <td>$275.00</td>
+   </tr>
+	<tr>
+   		<td>31</td>
+        <td  style="width:250px">AUTO-MSD-015146</td>
+        <td>MIGUEL ANGEL</td>
+        <td>REYES</td>
+        <td  style="width:250px">027-0045572-4</td>
+		<td  style="width:350px">REYES</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-699-1737</td>
+        <td style="width:250px">Z3000</td>
+        <td style="width:250px">CG150</td>
+        <td>2015</td>
+        <td>LZ3GJL6T14AK49582</td>
+        <td>K0769290</td>
+        <td style="width:250px">09-Jul-19 12:12 PM</td>
+		<td>17512</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Ene-20</td>
+        <td>$275.00</td>
+   </tr>
+	<tr>
+   		<td>32</td>
+        <td  style="width:250px">AUTO-MSD-015145</td>
+        <td>ALEXANDER</td>
+        <td>FELIZ SAVINON</td>
+        <td  style="width:250px">001-1262707-0</td>
+		<td  style="width:350px">FELIZ SAVINON</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-285-3504</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px"></td>
+        <td>1986</td>
+        <td>MD502104467</td>
+        <td>K1786347</td>
+        <td style="width:250px">09-Jul-19 12:12 PM</td>
+		<td>17511</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>33</td>
+        <td  style="width:250px">AUTO-MSD-015144</td>
+        <td>JOSE MIGUEL</td>
+        <td>VARGAS</td>
+        <td  style="width:250px">097-0033108-6</td>
+		<td  style="width:350px">VARGAS</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-923-6566</td>
+        <td style="width:250px">Z3000</td>
+        <td style="width:250px">CG150</td>
+        <td>2016</td>
+        <td>LZ3JL8T16G6K92308</td>
+        <td>K1296471</td>
+        <td style="width:250px">09-Jul-19 12:12 PM</td>
+		<td>17510</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>34</td>
+        <td  style="width:250px">AUTO-MSD-015143</td>
+        <td>DANY</td>
+        <td>PEGUERO JIL</td>
+        <td  style="width:250px">402-2629497-9</td>
+		<td  style="width:350px">PEGUERO JIL</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-578-4944</td>
+        <td style="width:250px">NIPONIA              </td>
+        <td style="width:250px">NIPONIA </td>
+        <td>2018</td>
+        <td>XF1AX100AKN004635</td>
+        <td>XXXX</td>
+        <td style="width:250px">09-Jul-19 11:11 AM</td>
+		<td>17509</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>35</td>
+        <td  style="width:250px">AUTO-MSD-015142</td>
+        <td>DEIVI</td>
+        <td>TIRESIAS JOSEPH</td>
+        <td  style="width:250px">402-3178966-6</td>
+		<td  style="width:350px">TIRESIAS JOSEPH</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-203-5273</td>
+        <td style="width:250px">NIPONIA              </td>
+        <td style="width:250px">NC110</td>
+        <td>2015</td>
+        <td>XFCG150AFY005184</td>
+        <td>K1205606</td>
+        <td style="width:250px">09-Jul-19 11:11 AM</td>
+		<td>17508</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Ene-20</td>
+        <td>$275.00</td>
+   </tr>
+	<tr>
+   		<td>36</td>
+        <td  style="width:250px">AUTO-MSD-015141</td>
+        <td>JUAN ALCIDES</td>
+        <td>RAMOS FERREIRAS</td>
+        <td  style="width:250px">055-0018291-9</td>
+		<td  style="width:350px">RAMOS FERREIRAS</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-821-9571</td>
+        <td style="width:250px">TOYOTA               </td>
+        <td style="width:250px">HIGHLANDER</td>
+        <td>2001</td>
+        <td>JTEHF21A210017089</td>
+        <td>G137757</td>
+        <td style="width:250px">09-Jul-19 11:11 AM</td>
+		<td>17507</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$1,875.00</td>
+   </tr>
+	<tr>
+   		<td>37</td>
+        <td  style="width:250px">AUTO-MSD-015140</td>
+        <td>NELSON AUG</td>
+        <td>PEREZ PEREZ</td>
+        <td  style="width:250px">018-0045472-8</td>
+		<td  style="width:350px">PEREZ PEREZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-778-0960</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px"></td>
+        <td>1990</td>
+        <td>1HGCB7560LA071664</td>
+        <td>A019070</td>
+        <td style="width:250px">09-Jul-19 11:11 AM</td>
+		<td>17506</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$1,875.00</td>
+   </tr>
+	<tr>
+   		<td>38</td>
+        <td  style="width:250px">AUTO-MSD-015139</td>
+        <td>LUIS MANUEL</td>
+        <td>ENCARNACION MORA</td>
+        <td  style="width:250px">224-0033694-1</td>
+		<td  style="width:350px">ENCARNACION MORA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-277-8516</td>
+        <td style="width:250px">FIAT                 </td>
+        <td style="width:250px">FIAT </td>
+        <td>1994</td>
+        <td>ZFA14600009281571</td>
+        <td>332330</td>
+        <td style="width:250px">09-Jul-19 11:11 AM</td>
+		<td>17505</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$1,875.00</td>
+   </tr>
+	<tr>
+   		<td>39</td>
+        <td  style="width:250px">AUTO-MSD-015138</td>
+        <td>RAFAEL</td>
+        <td>CASTANOS ALMONTE</td>
+        <td  style="width:250px">097-0005409-2</td>
+		<td  style="width:350px">CASTANOS ALMONTE</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-864-7314</td>
+        <td style="width:250px">YAMAHA               </td>
+        <td style="width:250px">YAMAHA </td>
+        <td>2003</td>
+        <td>MH34ST0012K170460</td>
+        <td>K0340087</td>
+        <td style="width:250px">09-Jul-19 10:10 AM</td>
+		<td>17504</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>40</td>
+        <td  style="width:250px">AUTO-MSD-015137</td>
+        <td>VANYA GRISEL</td>
+        <td>MOTA ASTACIO</td>
+        <td  style="width:250px">027-0033952-2</td>
+		<td  style="width:350px">MOTA ASTACIO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-771-9763</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">SUZUKI</td>
+        <td>2016</td>
+        <td>LC6TCJC9XH0004777</td>
+        <td>K1110413</td>
+        <td style="width:250px">09-Jul-19 10:10 AM</td>
+		<td>17503</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>41</td>
+        <td  style="width:250px">AUTO-MSD-015136</td>
+        <td>RAFAEL ANTONIO</td>
+        <td>VALDEZ TORRES</td>
+        <td  style="width:250px">001-1157519-7</td>
+		<td  style="width:350px">VALDEZ TORRES</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-395-9431</td>
+        <td style="width:250px">TAURO</td>
+        <td style="width:250px">TAURO</td>
+        <td>2018</td>
+        <td>TARPCK507JC000452</td>
+        <td>XXXX</td>
+        <td style="width:250px">09-Jul-19 10:10 AM</td>
+		<td>17502</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>42</td>
+        <td  style="width:250px">AUTO-MSD-015135</td>
+        <td>EVELIN</td>
+        <td>SENFLER ESTERLIS</td>
+        <td  style="width:250px">026-0115629-8</td>
+		<td  style="width:350px">SENFLER ESTERLIS</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-246-4105</td>
+        <td style="width:250px">NIPONIA              </td>
+        <td style="width:250px">NC-90</td>
+        <td>2018</td>
+        <td>XF1NC090AJL010881</td>
+        <td>K1693033</td>
+        <td style="width:250px">09-Jul-19 10:10 AM</td>
+		<td>17501</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>43</td>
+        <td  style="width:250px">AUTO-MSD-015134</td>
+        <td>JOSUE DAVID</td>
+        <td>PIE BLEX</td>
+        <td  style="width:250px">402-2540951-1</td>
+		<td  style="width:350px">PIE BLEX</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-752-5837</td>
+        <td style="width:250px">NIPONIA              </td>
+        <td style="width:250px">NIPONIA </td>
+        <td>2014</td>
+        <td>XF1NC125BFL001641</td>
+        <td>K1300764</td>
+        <td style="width:250px">09-Jul-19 9:09 AM</td>
+		<td>17500</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>44</td>
+        <td  style="width:250px">AUTO-MSD-015133</td>
+        <td>MILCIADES ANTONIO</td>
+        <td>LORENZO MEDINA</td>
+        <td  style="width:250px">016-0010805-2</td>
+		<td  style="width:350px">LORENZO MEDINA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-843-5109</td>
+        <td style="width:250px">TOYOTA               </td>
+        <td style="width:250px">CAMRY</td>
+        <td>1996</td>
+        <td>JT2BG12K3T0366931</td>
+        <td>A199835</td>
+        <td style="width:250px">09-Jul-19 9:09 AM</td>
+		<td>17499</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$1,875.00</td>
+   </tr>
+	<tr>
+   		<td>45</td>
+        <td  style="width:250px">AUTO-MSD-015132</td>
+        <td>YULYS</td>
+        <td>NOEL</td>
+        <td  style="width:250px">402-2669780-9</td>
+		<td  style="width:350px">NOEL</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-398-5634</td>
+        <td style="width:250px">NIPONIA              </td>
+        <td style="width:250px">NC-90</td>
+        <td>2012</td>
+        <td>DY147FMFEJ0007315</td>
+        <td>NO</td>
+        <td style="width:250px">09-Jul-19 9:09 AM</td>
+		<td>17498</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>46</td>
+        <td  style="width:250px">AUTO-MSD-015131</td>
+        <td>JOSE MARIANO</td>
+        <td>FAMILIA SANTANA</td>
+        <td  style="width:250px">402-2743704-9</td>
+		<td  style="width:350px">FAMILIA SANTANA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-618-4586</td>
+        <td style="width:250px">TAURO</td>
+        <td style="width:250px">TAURO</td>
+        <td>2017</td>
+        <td>TARPCK505JC001258</td>
+        <td>XX</td>
+        <td style="width:250px">09-Jul-19 9:09 AM</td>
+		<td>17497</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>47</td>
+        <td  style="width:250px">AUTO-MSD-015130</td>
+        <td>ISABEL</td>
+        <td>HERNANDEZ MARTINEZ</td>
+        <td  style="width:250px">025-0014339-7</td>
+		<td  style="width:350px">HERNANDEZ MARTINEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-493-3518</td>
+        <td style="width:250px">TOYOTA               </td>
+        <td style="width:250px">HILUX</td>
+        <td>2008</td>
+        <td>MROFZ29G901703829</td>
+        <td>8598186</td>
+        <td style="width:250px">09-Jul-19 9:09 AM</td>
+		<td>17496</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$2,475.00</td>
+   </tr>
+	<tr>
+   		<td>48</td>
+        <td  style="width:250px">AUTO-MSD-015129</td>
+        <td>JULIO CESAR</td>
+        <td>JOSE</td>
+        <td  style="width:250px">402-3920544-2</td>
+		<td  style="width:350px">JOSE</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-894-1762</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">AX100</td>
+        <td>2010</td>
+        <td>LC6PAGA10A0817641</td>
+        <td>N599785</td>
+        <td style="width:250px">09-Jul-19 8:08 AM</td>
+		<td>17495</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>49</td>
+        <td  style="width:250px">AUTO-MSD-015128</td>
+        <td>EMMANUEL</td>
+        <td>AYBAR</td>
+        <td  style="width:250px">402-2079428-9</td>
+		<td  style="width:350px">AYBAR</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-676-7831</td>
+        <td style="width:250px">DAIHATSU             </td>
+        <td style="width:250px">CUORE</td>
+        <td>2002</td>
+        <td>JDAL701S001050104</td>
+        <td>A265107</td>
+        <td style="width:250px">09-Jul-19 8:08 AM</td>
+		<td>17494</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$695.00</td>
+   </tr>
+	<tr>
+   		<td>50</td>
+        <td  style="width:250px">AUTO-MSD-015127</td>
+        <td>ANYELO</td>
+        <td>DIAZ  TEJADA</td>
+        <td  style="width:250px">402-1390551-2</td>
+		<td  style="width:350px">DIAZ  TEJADA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">849-925-1074</td>
+        <td style="width:250px">SANYOU</td>
+        <td style="width:250px">SANYOU</td>
+        <td>2017</td>
+        <td>LSYA6X12TH6018111</td>
+        <td>K1603476</td>
+        <td style="width:250px">09-Jul-19 8:08 AM</td>
+		<td>17493</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>51</td>
+        <td  style="width:250px">AUTO-MSD-015126</td>
+        <td>ANYELO</td>
+        <td>DIAZ  TEJADA</td>
+        <td  style="width:250px">402-1390551-2</td>
+		<td  style="width:350px">DIAZ  TEJADA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">849-925-1074</td>
+        <td style="width:250px">MITSUBISHI           </td>
+        <td style="width:250px">LANCER</td>
+        <td>1998</td>
+        <td>JMYSRCK1AWU005788</td>
+        <td>A095258</td>
+        <td style="width:250px">09-Jul-19 8:08 AM</td>
+		<td>17492</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Jul-20</td>
+        <td>$1,875.00</td>
+   </tr>
+	<tr>
+   		<td>52</td>
+        <td  style="width:250px">AUTO-MSD-015125</td>
+        <td>JULIO ANTONIO</td>
+        <td>MARTINEZ CASTILLO</td>
+        <td  style="width:250px">027-0037292-9</td>
+		<td  style="width:350px">MARTINEZ CASTILLO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-747-6670</td>
+        <td style="width:250px">DOMOTO               </td>
+        <td style="width:250px">DOMOTO</td>
+        <td>2015</td>
+        <td>LV7MGZ406FA905306</td>
+        <td>K0453503</td>
+        <td style="width:250px">09-Jul-19 8:08 AM</td>
+		<td>17491</td>
+        <td style="width:250px">09-Jul-19</td>
+        <td style="width:250px">09-Oct-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+		<td colspan="17" align="right" style="font-size: 15px; color: #828282; font-weight: bold;">Total:</td>
+        <td style="font-size: 15px; color: #828282; font-weight: bold;">$27,780.00</td>
+   </tr>
+</table>

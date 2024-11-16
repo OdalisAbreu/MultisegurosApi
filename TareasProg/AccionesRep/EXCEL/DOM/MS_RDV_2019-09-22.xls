@@ -1,0 +1,330 @@
+   
+  <table cellpadding="4" cellspacing="0">
+  	
+	<tr>
+		<td colspan="17"> 
+		
+		
+		
+		<table width="100%" cellpadding="9" cellspacing="0">
+	<tr>
+    	<td colspan="5">
+		
+		<b style="font-size: 60px; color: #d9261c;">Multi</b><b style="font-size: 60px; color: #828282;">Seguros 
+			</b>	
+			</td>
+    	
+   
+	  <td align="center" colspan="6">
+		  <font style="font-size: 22px; color: #828282; font-weight: bold;">
+		  	<b>REPORTE DIARIO DE VENTAS</b>
+		  </font>
+		  
+		  <br>
+		  <font style="font-size: 18px; color: #828282; font-weight: bold;">
+		  	Dominicana de Seguros
+		  <font><br>
+		  <font style="font-size: 14px; color: #828282; font-weight: bold;">
+		  	<b>Desde:</b> 22/09/2019 <b>Hasta:</b> 22/09/2019
+			</font>
+	  </td>
+	  <td align="center" colspan="3"> 
+	  	<b style="font-size: 19px;">Fecha del Reporte</b><br>
+		<font style="font-size: 14px; color: #828282; font-weight: bold;">
+			23-Sep-19 1:01 AM
+		</font>
+	  </td>
+  </tr>
+	
+</table>
+
+
+		</td>
+	</tr>
+	
+	
+   <tr style="background-color:#B1070A; color:#FFFFFF; font-size:14px;">
+   		<td></td>
+        <td>No. Poliza</td>
+        <td>Nombres</td>
+        <td>Apellidos</td>
+        <td>C&eacute;dula</td>
+		<td>Direcci&oacute;n</td>
+        <td>Ciudad</td>
+        <td>Tel&eacute;fono</td>
+        <td>Marca</td>
+        <td>Modelo</td>
+        <td>A&ntilde;o</td>
+        <td>Chassis</td>
+        <td>Placa</td>
+        <td>Fecha Emisi&oacute;n</td>
+		<td>Agencia</td>
+        <td width="250px">Inicio Vigencia</td>
+        <td width="250px">Fin Vigencia</td>
+        <td>Prima</td>
+   </tr> 
+	<tr>
+   		<td>1</td>
+        <td  style="width:250px">AUTO-MSD-018703</td>
+        <td>MODESTO OCTAVIANO</td>
+        <td>CASTILLO MARINEZ</td>
+        <td  style="width:250px">001-0859821-0</td>
+		<td  style="width:350px">CASTILLO MARINEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-354-5525</td>
+        <td style="width:250px">JINCHENG             </td>
+        <td style="width:250px">JINCHENG </td>
+        <td>2014</td>
+        <td>LJCPAGLHOES002952</td>
+        <td>K0406069</td>
+        <td style="width:250px">22-Sep-19 10:22 PM</td>
+		<td>21069</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>2</td>
+        <td  style="width:250px">AUTO-MSD-018702</td>
+        <td>YERLIN</td>
+        <td>SOTO</td>
+        <td  style="width:250px">402-2823983-2</td>
+		<td  style="width:350px">SOTO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-917-5240</td>
+        <td style="width:250px">TUCANO</td>
+        <td style="width:250px">TUCANO</td>
+        <td>2019</td>
+        <td>LBEJLX14TKA125074</td>
+        <td>18088649</td>
+        <td style="width:250px">22-Sep-19 6:18 PM</td>
+		<td>21068</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Dic-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>3</td>
+        <td  style="width:250px">AUTO-MSD-018701</td>
+        <td>FRANCISCO ANTONIO</td>
+        <td>POLANCO CASTILLO</td>
+        <td  style="width:250px">001-1344267-7</td>
+		<td  style="width:350px">POLANCO CASTILLO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">849-401-5540</td>
+        <td style="width:250px">X-1000               </td>
+        <td style="width:250px"></td>
+        <td>2017</td>
+        <td>TBL20P10XHHH50656</td>
+        <td>K1266609</td>
+        <td style="width:250px">22-Sep-19 6:18 PM</td>
+		<td>21067</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Mar-20</td>
+        <td>$275.00</td>
+   </tr>
+	<tr>
+   		<td>4</td>
+        <td  style="width:250px">AUTO-MSD-018700</td>
+        <td>ALVARO</td>
+        <td>BAUTISTA</td>
+        <td  style="width:250px">027-0051020-5</td>
+		<td  style="width:350px">BAUTISTA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-856-5763</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">AX100</td>
+        <td>2007</td>
+        <td>LC6PAGA1970857578</td>
+        <td>N356645</td>
+        <td style="width:250px">22-Sep-19 11:11 AM</td>
+		<td>21066</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Dic-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>5</td>
+        <td  style="width:250px">AUTO-MSD-018699</td>
+        <td>JIORDANOS FRANCO</td>
+        <td>SANCHEZ</td>
+        <td  style="width:250px">402-4172040-4</td>
+		<td  style="width:350px">SANCHEZ</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">849-351-1562</td>
+        <td style="width:250px">YAMAHA               </td>
+        <td style="width:250px">YAMAHA </td>
+        <td>1994</td>
+        <td>SA24J321863</td>
+        <td>N9039708</td>
+        <td style="width:250px">22-Sep-19 11:11 AM</td>
+		<td>21065</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Dic-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>6</td>
+        <td  style="width:250px">AUTO-MSD-018698</td>
+        <td>RAMON ANTONIO</td>
+        <td>MOTA MOREL</td>
+        <td  style="width:250px">027-0007310-5</td>
+		<td  style="width:350px">MOTA MOREL</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-546-9083</td>
+        <td style="width:250px">HAOJUE               </td>
+        <td style="width:250px">HAOJUE </td>
+        <td>2013</td>
+        <td>LC6PCJB84D0006352</td>
+        <td>K0145916</td>
+        <td style="width:250px">22-Sep-19 10:10 AM</td>
+		<td>21064</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>7</td>
+        <td  style="width:250px">AUTO-MSD-018697</td>
+        <td>FERNANDO ESTEBAN</td>
+        <td>PEREZ ESPINAL</td>
+        <td  style="width:250px">001-0257054-6</td>
+		<td  style="width:350px">PEREZ ESPINAL</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-929-8218</td>
+        <td style="width:250px">LUMA</td>
+        <td style="width:250px">LUMA</td>
+        <td>2008</td>
+        <td>LAELGZ4048B850936</td>
+        <td>XXX</td>
+        <td style="width:250px">22-Sep-19 9:09 AM</td>
+		<td>21063</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>8</td>
+        <td  style="width:250px">AUTO-MSD-018696</td>
+        <td>STALING JAVIER</td>
+        <td>GUERRERO RIJO</td>
+        <td  style="width:250px">402-2535474-1</td>
+		<td  style="width:350px">GUERRERO RIJO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-493-8820</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px">C90</td>
+        <td>1994</td>
+        <td>HA022803644</td>
+        <td>K1210822</td>
+        <td style="width:250px">22-Sep-19 9:09 AM</td>
+		<td>21062</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>9</td>
+        <td  style="width:250px">AUTO-MSD-018695</td>
+        <td>STALING JAVIER</td>
+        <td>GUERRERO RIJO</td>
+        <td  style="width:250px">402-2535474-1</td>
+		<td  style="width:350px">GUERRERO RIJO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">809-493-8820</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px">C90</td>
+        <td>1984</td>
+        <td>C708333917</td>
+        <td>K0304209</td>
+        <td style="width:250px">22-Sep-19 9:09 AM</td>
+		<td>21061</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>10</td>
+        <td  style="width:250px">AUTO-MSD-018694</td>
+        <td>ERASMO</td>
+        <td>MARTINEZ TRINIDAD</td>
+        <td  style="width:250px">067-0010039-6</td>
+		<td  style="width:350px">MARTINEZ TRINIDAD</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-467-2745</td>
+        <td style="width:250px">NISSAN               </td>
+        <td style="width:250px">NISSAN </td>
+        <td>2009</td>
+        <td>JN1TBAT30Z0170064</td>
+        <td>XXX</td>
+        <td style="width:250px">22-Sep-19 9:09 AM</td>
+		<td>21060</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Dic-19</td>
+        <td>$695.00</td>
+   </tr>
+	<tr>
+   		<td>11</td>
+        <td  style="width:250px">AUTO-MSD-018693</td>
+        <td>VICTOR MANUEL</td>
+        <td>CASTRO SANTANA</td>
+        <td  style="width:250px">402-1412081-4</td>
+		<td  style="width:350px">CASTRO SANTANA</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-744-1734</td>
+        <td style="width:250px">TAURO</td>
+        <td style="width:250px">TAURO</td>
+        <td>2016</td>
+        <td>TARPCN502GC001731</td>
+        <td>XXX</td>
+        <td style="width:250px">22-Sep-19 9:09 AM</td>
+		<td>21059</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+   		<td>12</td>
+        <td  style="width:250px">AUTO-MSD-018692</td>
+        <td>MALAQUIA</td>
+        <td>CONTRERAS CASTILLO</td>
+        <td  style="width:250px">100-0005647-2</td>
+		<td  style="width:350px">CONTRERAS CASTILLO</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">829-580-3858</td>
+        <td style="width:250px">SUZUKI               </td>
+        <td style="width:250px">AX100</td>
+        <td>2011</td>
+        <td>LC6PAGA16B0815300</td>
+        <td>N686693</td>
+        <td style="width:250px">22-Sep-19 8:08 AM</td>
+		<td>21058</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Dic-19</td>
+        <td>$175.00</td>
+   </tr>
+	<tr>
+   		<td>13</td>
+        <td  style="width:250px">AUTO-MSD-018691</td>
+        <td>PEDRO</td>
+        <td>FRANCISCO AZOR</td>
+        <td  style="width:250px">026-0038715-9</td>
+		<td  style="width:350px">FRANCISCO AZOR</td>
+        <td style="width:250px"></td>
+        <td style="width:250px">849-802-8816</td>
+        <td style="width:250px">HONDA                </td>
+        <td style="width:250px">HONDA </td>
+        <td>1994</td>
+        <td>JF061112758</td>
+        <td>K0222323</td>
+        <td style="width:250px">22-Sep-19 8:08 AM</td>
+		<td>21057</td>
+        <td style="width:250px">22-Sep-19</td>
+        <td style="width:250px">22-Sep-20</td>
+        <td>$375.00</td>
+   </tr>
+	<tr>
+		<td colspan="17" align="right" style="font-size: 15px; color: #828282; font-weight: bold;">Total:</td>
+        <td style="font-size: 15px; color: #828282; font-weight: bold;">$4,295.00</td>
+   </tr>
+</table>

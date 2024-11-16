@@ -1,0 +1,250 @@
+   
+  <table cellpadding="4" cellspacing="0">
+  	
+	<tr>
+		<td colspan="21"> 
+		
+		
+		
+		<table width="100%" cellpadding="9" cellspacing="0">
+	<tr>
+    	<td colspan="6">
+		
+		<b style="font-size: 60px; color: #d9261c;">Multi</b><b style="font-size: 60px; color: #828282;">Seguros 
+			</b>	
+			</td>
+    	
+   
+	  <td align="center" colspan="7">
+		  <font style="font-size: 22px; color: #828282; font-weight: bold;">
+		  	<b>REPORTE DIARIO DE VENTAS</b>
+		  </font>
+		  
+		  <br>
+		  <font style="font-size: 18px; color: #828282; font-weight: bold;">
+		  	General de Seguros
+		  <font><br>
+		  <font style="font-size: 14px; color: #828282; font-weight: bold;">
+		  	<b>Desde:</b> 09/04/2018 <b>Hasta:</b> 09/04/2018
+			</font>
+	  </td>
+	  <td align="center" colspan="4"> 
+	  	<b style="font-size: 18px;">Fecha del Reporte</b><br>
+		<font style="font-size: 14px; color: #828282; font-weight: bold;">
+			10-Abr-18 1:01 AM
+		</font>
+	  </td>
+  </tr>
+	
+</table>
+
+
+		</td>
+	</tr>
+	
+	
+   <tr style="background-color:#B1070A; color:#FFFFFF; font-size:14px;">
+   		<td></td>
+        <td>No. Poliza</td>
+        <td>Nombres</td>
+        <td>Apellidos</td>
+        <td>C&eacute;dula</td>
+        <td>Ciudad</td>
+        <td>Tel&eacute;fono</td>
+        <td>Tipo</td>
+        <td>Marca</td>
+        <td>Modelo</td>
+        <td>A&ntilde;o</td>
+        <td>Chassis</td>
+        <td>Placa</td>
+        <td>Fecha Emisi&oacute;n con hora</td>
+		<td>Agencia</td>
+        <td>Inicio Vigencia</td>
+        <td>Fin Vigencia</td>
+        <td>Prima</td>
+   </tr> 
+	<tr>
+   		<td>1</td>
+        <td>240139-001151</td>
+        <td>JUAN MIGUEL</td>
+        <td>GUERRERO GUERRERO</td>
+        <td>001-0962185-4</td>
+        <td>DISTRITO NACIONAL</td>
+        <td>809-880-9678</td>
+        <td>Motocicleta</td>
+        <td>HONDA                </td>
+        <td>C50</td>
+        <td>1985</td>
+        <td>C503373351</td>
+        <td>K0768216</td>
+        <td>09-Abr-18 9:21 PM</td>
+		<td>3448</td>
+        <td>09-Abr-18</td>
+        <td>09-Abr-19</td>
+        <td>$425.00</td>
+   </tr>
+	<tr>
+   		<td>2</td>
+        <td>240139-001150</td>
+        <td>ELIAS</td>
+        <td>MOSQUEA</td>
+        <td>001-1093140-9</td>
+        <td>SANTO DOMINGO</td>
+        <td>829-714-2179</td>
+        <td>Furgoneta</td>
+        <td>DAIHATSU             </td>
+        <td>HIJET</td>
+        <td>2000</td>
+        <td>S83V404062</td>
+        <td>I028253</td>
+        <td>09-Abr-18 7:19 PM</td>
+		<td>3447</td>
+        <td>09-Abr-18</td>
+        <td>09-Abr-19</td>
+        <td>$2,475.00</td>
+   </tr>
+	<tr>
+   		<td>3</td>
+        <td>240139-001149</td>
+        <td>RICHARD STEVEN</td>
+        <td>CAMARENA CASILLA</td>
+        <td>402-3783950-7</td>
+        <td>DISTRITO NACIONAL</td>
+        <td>809-946-1730</td>
+        <td>Motocicleta</td>
+        <td>X-1000               </td>
+        <td></td>
+        <td>2014</td>
+        <td>TBL20P109EHD80098</td>
+        <td>K0225698</td>
+        <td>09-Abr-18 4:16 PM</td>
+		<td>3444</td>
+        <td>09-Abr-18</td>
+        <td>09-Abr-19</td>
+        <td>$425.00</td>
+   </tr>
+	<tr>
+   		<td>4</td>
+        <td>240139-001148</td>
+        <td>JUAN</td>
+        <td>MEDINA</td>
+        <td>146-0000714-1</td>
+        <td>SANTO DOMINGO</td>
+        <td>829-752-1230</td>
+        <td>Motocicleta</td>
+        <td>GATO</td>
+        <td>GATO</td>
+        <td>2018</td>
+        <td>LJCPAGLFXJ1000655</td>
+        <td>XXXX</td>
+        <td>09-Abr-18 10:10 AM</td>
+		<td>3440</td>
+        <td>09-Abr-18</td>
+        <td>09-Jul-18</td>
+        <td>$185.00</td>
+   </tr>
+	<tr>
+   		<td>5</td>
+        <td>240139-001147</td>
+        <td>JULIO CESAR</td>
+        <td>GOMEZ RIJO</td>
+        <td>028-0033727-7</td>
+        <td>LA ALTAGRACIA</td>
+        <td>829-537-3805</td>
+        <td>Motocicleta</td>
+        <td>YAMAHA               </td>
+        <td></td>
+        <td>2006</td>
+        <td>LAWPEJA065B002230</td>
+        <td>N132429M</td>
+        <td>09-Abr-18 10:10 AM</td>
+		<td>3439</td>
+        <td>09-Abr-18</td>
+        <td>09-Jul-18</td>
+        <td>$185.00</td>
+   </tr>
+	<tr>
+   		<td>6</td>
+        <td>240139-001146</td>
+        <td>DOMINGO BOLIVAR</td>
+        <td>TAVAREZ FERNANDEZ</td>
+        <td>090-0012892-7</td>
+        <td>MONTE PLATA</td>
+        <td>809-868-6444</td>
+        <td>Camioneta</td>
+        <td>TOYOTA               </td>
+        <td>HI LUX SURF</td>
+        <td>2009</td>
+        <td>MR0FZ29G901554882</td>
+        <td>EX07504</td>
+        <td>09-Abr-18 10:10 AM</td>
+		<td>3438</td>
+        <td>09-Abr-18</td>
+        <td>09-Abr-19</td>
+        <td>$2,475.00</td>
+   </tr>
+	<tr>
+   		<td>7</td>
+        <td>240139-001145</td>
+        <td>EUGENIO</td>
+        <td>ADAMES PADILLA</td>
+        <td>223-0045509-8</td>
+        <td>SANTO DOMINGO</td>
+        <td>829-848-7735</td>
+        <td>Motocicleta</td>
+        <td>LONCIN               </td>
+        <td>LONCIN </td>
+        <td>2015</td>
+        <td>LLCLPP206EE111251</td>
+        <td>K0520470</td>
+        <td>09-Abr-18 10:10 AM</td>
+		<td>3434</td>
+        <td>09-Abr-18</td>
+        <td>09-Jul-18</td>
+        <td>$185.00</td>
+   </tr>
+	<tr>
+   		<td>8</td>
+        <td>240139-001144</td>
+        <td>JUAN RAMON</td>
+        <td>GUERRERO</td>
+        <td>028-0100151-8</td>
+        <td>LA ALTAGRACIA</td>
+        <td>829-332-6024</td>
+        <td>Motocicleta</td>
+        <td>TAURO</td>
+        <td></td>
+        <td>2016</td>
+        <td>163FML2G5051294</td>
+        <td>K1100658</td>
+        <td>09-Abr-18 9:09 AM</td>
+		<td>3432</td>
+        <td>09-Abr-18</td>
+        <td>09-Jul-18</td>
+        <td>$185.00</td>
+   </tr>
+	<tr>
+   		<td>9</td>
+        <td>240139-001143</td>
+        <td>MARGARITO</td>
+        <td>PEREZ RINCON</td>
+        <td>026-0090696-6</td>
+        <td>LA ROMANA</td>
+        <td>809-491-1586</td>
+        <td>Motocicleta</td>
+        <td>YAMAHA               </td>
+        <td>YAMAHA </td>
+        <td>1983</td>
+        <td>439338240</td>
+        <td>NCG284</td>
+        <td>09-Abr-18 9:09 AM</td>
+		<td>3431</td>
+        <td>09-Abr-18</td>
+        <td>09-Jul-18</td>
+        <td>$185.00</td>
+   </tr>
+	<tr>
+		<td colspan="17" align="right" style="font-size: 15px; color: #828282; font-weight: bold;">Total:</td>
+        <td style="font-size: 15px; color: #828282; font-weight: bold;">$6,725.00</td>
+   </tr>
+</table>
