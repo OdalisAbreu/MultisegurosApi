@@ -7,8 +7,8 @@ include("../inc/fechas.func.php");
 include("../inc/nombres.func.php");
 Conectarse();
 
-$directorio = "https://multiseguros.com.do/Seg_V2/images/";
-$logo = "https://multiseguros.com.do/Seg_V2/images/Aseguradora/";
+$directorio = "https://multiseguros.com.do/MultisegurosWeb/images/";
+$logo = "https://multiseguros.com.do/MultisegurosWeb/images/Aseguradora/";
 
 
 date_default_timezone_set('America/Santo_Domingo');
@@ -186,21 +186,21 @@ for ($i = 0; $i < count($porciones); $i++) {
 	$MontoServ = $r[1];
 
 	$montoServAdc += $MontoServ;
-	?>
+?>
 
 
 
-		<tr>
-			<td align="left" width="265"><?= $NombreServ ?> - Incluido</td>
-			<td align="left"><strong>RD$ <?= FormatDinero($MontoServ) ?></strong></td>
-		</tr>
-	<?
-	}
+	<tr>
+		<td align="left" width="265"><?= $NombreServ ?> - Incluido</td>
+		<td align="left"><strong>RD$ <?= FormatDinero($MontoServ) ?></strong></td>
+	</tr>
+<?
+}
 
 
 
 
-	$html .= '
+$html .= '
 	  	
     </table>
 	
@@ -357,36 +357,36 @@ Casa del Conductor <br>
   </tr>
   1
 </table>';
-	// set font
+// set font
 
 
 
-	// * * * Direccion del Archivo
+// * * * Direccion del Archivo
 
-	if ($html !== '0') {
-		// create new PDF document
-		$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+if ($html !== '0') {
+	// create new PDF document
+	$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-		// set document information
-		$pdf->SetCreator(PDF_CREATOR);
-		//set auto page breaks
-		$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
-		//set image scale factor
-		$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
-		$pdf->setLanguageArray($l);
-		$pdf->AddPage();
+	// set document information
+	$pdf->SetCreator(PDF_CREATOR);
+	//set auto page breaks
+	$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+	//set image scale factor
+	$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+	$pdf->setLanguageArray($l);
+	$pdf->AddPage();
 
-		$pdf->writeHTML($html, true, 0, true, false, '');
-		$pdf->lastPage();
-		$carpeta = 'PDF/ASEGURADORA/' . $_GET['id_aseg'] . '';
+	$pdf->writeHTML($html, true, 0, true, false, '');
+	$pdf->lastPage();
+	$carpeta = 'PDF/ASEGURADORA/' . $_GET['id_aseg'] . '';
 
-		if (!file_exists($carpeta)) {
-			mkdir($carpeta, 0777, true);
-		}
-
-		$nombreFile = 'Ventas_' . $_GET['id_aseg'] . '_' . date('d-m-Y H:i:s');
-		$pdf->Output("PDF/ASEGURADORA/" . $_GET['id_aseg'] . "/$nombreFile.pdf", 'F');
-		echo $nombreFile . ".pdf";
+	if (!file_exists($carpeta)) {
+		mkdir($carpeta, 0777, true);
 	}
 
-	?>
+	$nombreFile = 'Ventas_' . $_GET['id_aseg'] . '_' . date('d-m-Y H:i:s');
+	$pdf->Output("PDF/ASEGURADORA/" . $_GET['id_aseg'] . "/$nombreFile.pdf", 'F');
+	echo $nombreFile . ".pdf";
+}
+
+?>

@@ -5,155 +5,155 @@ $Fech_reg 	= $AA[2] . '-' . $AA[1] . '-' . $AA[0];
 $dir 		= "PDF/CLIENTES/" . $_GET['user_id'] . "/" . $Fech_reg . ".pdf";
 
 if (file_exists($dir)) {
-	?>
+?>
 	<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $Fech_reg ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
 	<?
+} else {
+
+
+	ini_set('display_errors', 0);
+
+	set_time_limit(0);
+	include("../inc/conexion_inc.php");
+	include("../inc/fechas.func.php");
+	include("../inc/nombres.func.php");
+	Conectarse();
+
+	$directorio = "https://multiseguros.com.do/MultisegurosWeb/images/";
+	$logo = "https://multiseguros.com.do/MultisegurosWeb/images/Aseguradora/";
+
+
+	date_default_timezone_set('America/Santo_Domingo');
+	require_once('tcpdf/config/lang/eng.php');
+	require_once('tcpdf/tcpdf.php');
+
+	$ancho  = "690";
+	$anchoP = "345";
+	$altura = "3100";
+
+	// --------------------------------------------	
+	if ($_GET['fecha1']) {
+		$fecha1 = $_GET['fecha1'];
 	} else {
+		$fecha1 = fecha_despues('' . date('d/m/Y') . '', -2);
+	}
+	// --------------------------------------------
+	if ($_GET['fecha2']) {
+		$fecha2 = $_GET['fecha2'];
+	} else {
+		$fecha2 = fecha_despues('' . date('d/m/Y') . '', -2);
+	}
+	// -------------------------------------------
+
+	$fd1		= explode('/', $fecha1);
+	$fh1		= explode('/', $fecha2);
+	$fDesde 	= $fd1[2] . '-' . $fd1[1] . '-' . $fd1[0];
+	$fHasta 	= $fh1[2] . '-' . $fh1[1] . '-' . $fh1[0];
+
+	$wFecha2 = "fecha >= '$fDesde 00:00:00' AND fecha < '$fHasta 23:59:59' ";
 
 
-		ini_set('display_errors', 0);
-
-		set_time_limit(0);
-		include("../inc/conexion_inc.php");
-		include("../inc/fechas.func.php");
-		include("../inc/nombres.func.php");
-		Conectarse();
-
-		$directorio = "https://multiseguros.com.do/Seg_V2/images/";
-		$logo = "https://multiseguros.com.do/Seg_V2/images/Aseguradora/";
-
-
-		date_default_timezone_set('America/Santo_Domingo');
-		require_once('tcpdf/config/lang/eng.php');
-		require_once('tcpdf/tcpdf.php');
-
-		$ancho  = "690";
-		$anchoP = "345";
-		$altura = "3100";
-
-		// --------------------------------------------	
-		if ($_GET['fecha1']) {
-			$fecha1 = $_GET['fecha1'];
-		} else {
-			$fecha1 = fecha_despues('' . date('d/m/Y') . '', -2);
-		}
-		// --------------------------------------------
-		if ($_GET['fecha2']) {
-			$fecha2 = $_GET['fecha2'];
-		} else {
-			$fecha2 = fecha_despues('' . date('d/m/Y') . '', -2);
-		}
-		// -------------------------------------------
-
-		$fd1		= explode('/', $fecha1);
-		$fh1		= explode('/', $fecha2);
-		$fDesde 	= $fd1[2] . '-' . $fd1[1] . '-' . $fd1[0];
-		$fHasta 	= $fh1[2] . '-' . $fh1[1] . '-' . $fh1[0];
-
-		$wFecha2 = "fecha >= '$fDesde 00:00:00' AND fecha < '$fHasta 23:59:59' ";
-
-
-		$w_user = "(
+	$w_user = "(
 	user_id='" . $_GET['user_id'] . "'";
 
-		// PUNTOS DE VENTAS
-		$quer1 = mysql_query("
+	// PUNTOS DE VENTAS
+	$quer1 = mysql_query("
 	SELECT id FROM personal WHERE id_dist ='" . $_GET['user_id'] . "'");
-		while ($u = mysql_fetch_array($quer1)) {
+	while ($u = mysql_fetch_array($quer1)) {
 
-			$w_user .= " OR user_id='" . $u['id'] . "'";
+		$w_user .= " OR user_id='" . $u['id'] . "'";
 
-			$quer2 = mysql_query("
+		$quer2 = mysql_query("
 		SELECT id FROM personal WHERE id_dist ='" . $u['id'] . "'");
-			while ($u2 = mysql_fetch_array($quer2)) {
-				$w_user .= " OR user_id='" . $u2['id'] . "'";
-			}
+		while ($u2 = mysql_fetch_array($quer2)) {
+			$w_user .= " OR user_id='" . $u2['id'] . "'";
 		}
-		$w_user .= " )";
+	}
+	$w_user .= " )";
 
 
 
-		//BUSCAR PRIMERA TRANSACCION
-		$Q1 = mysql_query("select * from seguro_transacciones   
+	//BUSCAR PRIMERA TRANSACCION
+	$Q1 = mysql_query("select * from seguro_transacciones   
 	WHERE $w_user AND $wFecha2 order by id ASC");
 
-		/*echo "<b>CONSULTA: </b>select * from seguro_transacciones   
+	/*echo "<b>CONSULTA: </b>select * from seguro_transacciones   
 	WHERE $w_user AND $wFecha2 order by id ASC<br>";*/
-		//echo "Numero de registros: ".$numero_filas = mysql_num_rows($Q1);
+	//echo "Numero de registros: ".$numero_filas = mysql_num_rows($Q1);
 
-		//exit();
-		while ($R1 = mysql_fetch_array($Q1)) {
-
-
-			$t[] = $R1;
-		}
+	//exit();
+	while ($R1 = mysql_fetch_array($Q1)) {
 
 
+		$t[] = $R1;
+	}
 
 
-		//BUSCAR ULTIMA TRANSACCION
-		/*$Q2=mysql_query("select * from seguro_transacciones   
+
+
+	//BUSCAR ULTIMA TRANSACCION
+	/*$Q2=mysql_query("select * from seguro_transacciones   
 	WHERE $wFecha2 AND id_aseg='1' order by id DESC LIMIT 1");
   	$R2=mysql_fetch_array($Q2);*/
 
 
 
-		foreach ($t as $key => $row) {
+	foreach ($t as $key => $row) {
 
-			$i++;
+		$i++;
 
-			$id_aseguradora = $row['id_aseg'];
+		$id_aseguradora = $row['id_aseg'];
 
-			switch ($id_aseguradora) {
-				case '1':
-					$NombreImg = "dominicana.jpg";
-					break;
-				case '2':
-					$NombreImg = "patria.png";
-					break;
-				case '3':
-					$NombreImg = "general.png";
-					break;
-				case '4':
-					$NombreImg = "atrio.png";
-					break;
-				default:
-					$NombreImg = "";
-					break;
-			}
+		switch ($id_aseguradora) {
+			case '1':
+				$NombreImg = "dominicana.jpg";
+				break;
+			case '2':
+				$NombreImg = "patria.png";
+				break;
+			case '3':
+				$NombreImg = "general.png";
+				break;
+			case '4':
+				$NombreImg = "atrio.png";
+				break;
+			default:
+				$NombreImg = "";
+				break;
+		}
 
 
-			//echo "<br>ID consulta: ".$row['id']."<br>";
-			//echo "seguro: ".$row['id_aseg']."<br>";
-			//echo "cliente: ".$row['id_cliente']."<br>";
-			//echo "vehiculo: ".$row['id_vehiculo']."<br>";
-			//echo "poliza: ".$row['vigencia_poliza']."<br>";
+		//echo "<br>ID consulta: ".$row['id']."<br>";
+		//echo "seguro: ".$row['id_aseg']."<br>";
+		//echo "cliente: ".$row['id_cliente']."<br>";
+		//echo "vehiculo: ".$row['id_vehiculo']."<br>";
+		//echo "poliza: ".$row['vigencia_poliza']."<br>";
 
-			/*if($numero_filas==$i){
+		/*if($numero_filas==$i){
 		echo "<br><br>REGISTRO REALIZADO COMPLETAMENTE";	
 	}*/
 
-			//BUSCAR DATOS DEL CLIENTE
-			$QClient = mysql_query("select * from seguro_clientes WHERE id ='" . $row['id_cliente'] . "' LIMIT 1");
-			$RQClient = mysql_fetch_array($QClient);
+		//BUSCAR DATOS DEL CLIENTE
+		$QClient = mysql_query("select * from seguro_clientes WHERE id ='" . $row['id_cliente'] . "' LIMIT 1");
+		$RQClient = mysql_fetch_array($QClient);
 
-			//BUSCAR DATOS DEL VEHICULO
-			$QVeh = mysql_query("select * from seguro_vehiculo WHERE id ='" . $row['id_vehiculo'] . "' LIMIT 1");
-			$RQVehi = mysql_fetch_array($QVeh);
+		//BUSCAR DATOS DEL VEHICULO
+		$QVeh = mysql_query("select * from seguro_vehiculo WHERE id ='" . $row['id_vehiculo'] . "' LIMIT 1");
+		$RQVehi = mysql_fetch_array($QVeh);
 
-			$tarifa = explode("/", TarifaVehiculo($RQVehi['veh_tipo']));
+		$tarifa = explode("/", TarifaVehiculo($RQVehi['veh_tipo']));
 
-			$dpa 	= substr(FormatDinero($tarifa[0]), 0, -3);
-			$rc 		= substr(FormatDinero($tarifa[1]), 0, -3);
-			$rc2 	= substr(FormatDinero($tarifa[2]), 0, -3);
-			$ap 		= substr(FormatDinero($tarifa[3]), 0, -3);
-			$fj 		= substr(FormatDinero($tarifa[4]), 0, -3);
+		$dpa 	= substr(FormatDinero($tarifa[0]), 0, -3);
+		$rc 		= substr(FormatDinero($tarifa[1]), 0, -3);
+		$rc2 	= substr(FormatDinero($tarifa[2]), 0, -3);
+		$ap 		= substr(FormatDinero($tarifa[3]), 0, -3);
+		$fj 		= substr(FormatDinero($tarifa[4]), 0, -3);
 
-			$montoSeguro = montoSeguro($row['vigencia_poliza'], $RQVehi['veh_tipo']);
+		$montoSeguro = montoSeguro($row['vigencia_poliza'], $RQVehi['veh_tipo']);
 
-			$Agencia = explode("/", Agencia($row['user_id']));
+		$Agencia = explode("/", Agencia($row['user_id']));
 
-			$html .= '
+		$html .= '
 <table width="' . $ancho . 'px;" height="' . $altura . 'px;"  style="font-size:25px;" align="center" cellpadding="4" cellspacing="0"> 
         	<tr>
             	<td width="60%" ><h1>CERTIFICADO DE SEGURO<br>
@@ -269,31 +269,31 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		
 		';
 
-			if ($row['serv_adc'] != '') {
-				//BUSCAR CANTAIDAD DE LOS SERVICIOS ADICIONALES
-				$porciones = explode("-", $row['serv_adc']);
+		if ($row['serv_adc'] != '') {
+			//BUSCAR CANTAIDAD DE LOS SERVICIOS ADICIONALES
+			$porciones = explode("-", $row['serv_adc']);
 
-				for ($i = 0; $i < count($porciones); $i++) {
+			for ($i = 0; $i < count($porciones); $i++) {
 
-					if ($porciones > 0) {
-						$r = explode("|", ServAdicional($porciones[$i], $row['vigencia_poliza']));
-						$NombreServ = $r[0];
-						$MontoServ = $r[1];
+				if ($porciones > 0) {
+					$r = explode("|", ServAdicional($porciones[$i], $row['vigencia_poliza']));
+					$NombreServ = $r[0];
+					$MontoServ = $r[1];
 
-						$montoServAdc += $MontoServ;
+					$montoServAdc += $MontoServ;
 
 
 
-						$html .= '     
+					$html .= '     
         <tr>
 			<td align="left" width="265">' . $NombreServ . " - Incluido" . '</td>
             <td align="left">RD$ ' . FormatDinero($MontoServ) . '</td>
 		</tr>';
-					}
 				}
 			}
+		}
 
-			$html .= '
+		$html .= '
 	  	
     </table>
 	
@@ -461,46 +461,46 @@ Casa del Conductor <br>
 </table>
 
 ';
-			// set font
+		// set font
 
 
-		}
-		// * * * Direccion del Archivo
-
-		if ($html !== '0') {
-			// create new PDF document
-			$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-
-			// set document information
-			$pdf->SetCreator(PDF_CREATOR);
-			//set auto page breaks
-			$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
-			//set image scale factor
-			$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
-			$pdf->setLanguageArray($l);
-			$pdf->AddPage();
-
-			$pdf->writeHTML($html, true, 0, true, false, '');
-			$pdf->lastPage();
-			//$carpeta = 'PDF/ASEGURADORA/'.$_GET['id_aseg'].'';
-			$carpeta = 'PDF/CLIENTES/' . $_GET['user_id'] . '';
-
-			if (!file_exists($carpeta)) {
-				mkdir($carpeta, 0777, true);
-			}
-
-			$nombreFile = $Fech_reg;
-			//echo $nombreFile = $fecha1.$fecha2;
-
-			$pdf->Output("PDF/CLIENTES/" . $_GET['user_id'] . "/$nombreFile.pdf", 'F');
-			$dir = "PDF/CLIENTES/" . $_GET['user_id'] . "/" . $nombreFile . ".pdf";
-
-			if (file_exists($dir)) { ?>
-
-				<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $Fech_reg ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
-
-	<? }
-		}
 	}
+	// * * * Direccion del Archivo
 
-	?>
+	if ($html !== '0') {
+		// create new PDF document
+		$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+
+		// set document information
+		$pdf->SetCreator(PDF_CREATOR);
+		//set auto page breaks
+		$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+		//set image scale factor
+		$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+		$pdf->setLanguageArray($l);
+		$pdf->AddPage();
+
+		$pdf->writeHTML($html, true, 0, true, false, '');
+		$pdf->lastPage();
+		//$carpeta = 'PDF/ASEGURADORA/'.$_GET['id_aseg'].'';
+		$carpeta = 'PDF/CLIENTES/' . $_GET['user_id'] . '';
+
+		if (!file_exists($carpeta)) {
+			mkdir($carpeta, 0777, true);
+		}
+
+		$nombreFile = $Fech_reg;
+		//echo $nombreFile = $fecha1.$fecha2;
+
+		$pdf->Output("PDF/CLIENTES/" . $_GET['user_id'] . "/$nombreFile.pdf", 'F');
+		$dir = "PDF/CLIENTES/" . $_GET['user_id'] . "/" . $nombreFile . ".pdf";
+
+		if (file_exists($dir)) { ?>
+
+			<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $Fech_reg ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
+
+<? }
+	}
+}
+
+?>

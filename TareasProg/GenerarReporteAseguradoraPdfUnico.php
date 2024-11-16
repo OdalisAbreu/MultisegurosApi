@@ -7,8 +7,8 @@ include "../inc/fechas.func.php";
 include "../inc/nombres.func.php";
 Conectarse();
 
-$directorio = "https://multiseguros.com.do/Seg_V2/images/";
-$logo = "https://multiseguros.com.do/Seg_V2/images/Aseguradora/";
+$directorio = "https://multiseguros.com.do/MultisegurosWeb/images/";
+$logo = "https://multiseguros.com.do/MultisegurosWeb/images/Aseguradora/";
 
 date_default_timezone_set('America/Santo_Domingo');
 require_once 'tcpdf/config/lang/eng.php';
@@ -47,14 +47,14 @@ switch ($id_aseguradora) {
     break;
 }
 
-if($row['user_id'] == 89){
-	$image = 'https://multiseguros.com.do/Seg_V2/images/VIA/4.jpg';
-	$telefono = '<br> +1 809 633 0333';
-	$frase = 'CSQ';
-}else{
-	$image = 'https://multiseguros.com.do/Seg_V2/images/VIA/4.jpg';
-	$telefono = '+1 809 200 1842';
-	$frase = 'ES F&Aacute;CIL, ES VIA.';
+if ($row['user_id'] == 89) {
+  $image = 'https://multiseguros.com.do/MultisegurosWeb/images/VIA/4.jpg';
+  $telefono = '<br> +1 809 633 0333';
+  $frase = 'CSQ';
+} else {
+  $image = 'https://multiseguros.com.do/MultisegurosWeb/images/VIA/4.jpg';
+  $telefono = '+1 809 200 1842';
+  $frase = 'ES F&Aacute;CIL, ES VIA.';
 }
 
 $ID_ASEG = $row['id_aseg'];
@@ -378,12 +378,12 @@ $html .=
     font-size: 42px; " valign="top">
     	<td>
 			<font style="font-size:30px"> Servicio al Cliente</font> 
-			<img src="'. $image .'" height="37" />
-			<br> '. $telefono .'
+			<img src="' . $image . '" height="37" />
+			<br> ' . $telefono . '
 		</td>
         <td valign="middle" align="left"> 
 			<div style="padding-top:10px margin-left:7px; height:25px !important; font-size: 44px;">
-      '. $frase .'
+      ' . $frase . '
 			</div>
 		</td>
     </tr>
@@ -603,43 +603,43 @@ if ($html !== '0') {
 
   if (file_exists($dir)) { ?>
 
-      <a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../../ws2/TareasProg/DescargarUnico.php?archivo=<?= $nombreFile ?>');"><b>Descargar Poliza</b></a>
+    <a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../../ws2/TareasProg/DescargarUnico.php?archivo=<?= $nombreFile ?>');"><b>Descargar Poliza</b></a>
 
-  <?php }
-  }
+<?php }
+}
 
-  $mensajeSMS =
-    "MultiSeguros-Gracias por comprar su Seguro de Ley en " .
-    $laAgencia["vendedor"] .
-    ". No. Póliza " .
-    $poliza .
-    " Vigencia del " .
-    FechaListPDFn($row['fecha_inicio']) .
-    " al " .
-    FechaListPDFin($row['fecha_fin']) .
-    ". Su MARBETE-> ";
+$mensajeSMS =
+  "MultiSeguros-Gracias por comprar su Seguro de Ley en " .
+  $laAgencia["vendedor"] .
+  ". No. Póliza " .
+  $poliza .
+  " Vigencia del " .
+  FechaListPDFn($row['fecha_inicio']) .
+  " al " .
+  FechaListPDFin($row['fecha_fin']) .
+  ". Su MARBETE-> ";
 
-  $linkPdfPoliza =
-    "https://multiseguros.com.do/ws2/TareasProg/GenerarReporteAseguradoraPdfUnico.php?sms=0&id_trans=" .
-    $row["id"];
+$linkPdfPoliza =
+  "https://multiseguros.com.do/ws2/TareasProg/GenerarReporteAseguradoraPdfUnico.php?sms=0&id_trans=" .
+  $row["id"];
 
-  $urlSMS = "https://apismsi.aldeamo.com/SmsiWS/smsSendPost/";
+$urlSMS = "https://apismsi.aldeamo.com/SmsiWS/smsSendPost/";
 
-  $celCliente = getTelefonoCliente($row["id"]);
+$celCliente = getTelefonoCliente($row["id"]);
 
-  if ($_GET['test'] == 1) {
-    $celCliente = '8293805036';
-  }
+if ($_GET['test'] == 1) {
+  $celCliente = '8293805036';
+}
 
-  $data =
-    '{"country": "1","message":"' .
-    $mensajeSMS .
-    '","addresseeList": [{"mobile":"' .
-    $celCliente .
-    '","url":"' .
-    $linkPdfPoliza .
-    '"}]}';
+$data =
+  '{"country": "1","message":"' .
+  $mensajeSMS .
+  '","addresseeList": [{"mobile":"' .
+  $celCliente .
+  '","url":"' .
+  $linkPdfPoliza .
+  '"}]}';
 
-  if ($_GET['sms'] == 1) {
-    httpPost($urlSMS, $data, "nrivera", "mcXCQt4Mx@");
-  }
+if ($_GET['sms'] == 1) {
+  httpPost($urlSMS, $data, "nrivera", "mcXCQt4Mx@");
+}

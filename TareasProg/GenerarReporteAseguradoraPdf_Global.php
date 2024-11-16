@@ -51,8 +51,8 @@ $fDesde 	= $fd1[2] . '-' . $fd1[1] . '-' . $fd1[0];
 $fHasta 	= $fh1[2] . '-' . $fh1[1] . '-' . $fh1[0];
 
 $wFecha2 	= "fecha >= '$fDesde 00:00:00' AND fecha < '$fHasta 23:59:59' ";
-$directorio = "https://multiseguros.com.do/Seg_V2/images/";
-$logo 		= "https://multiseguros.com.do/Seg_V2/images/Aseguradora/";
+$directorio = "https://multiseguros.com.do/MultisegurosWeb/images/";
+$logo 		= "https://multiseguros.com.do/MultisegurosWeb/images/Aseguradora/";
 
 $w_user = "(
 	user_id='" . $_GET['user_id'] . "'";
@@ -579,10 +579,10 @@ if ($html !== '0') {
 
 	if (file_exists($dir)) { ?>
 
-			<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $nombreFile . $rutids ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
+		<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $nombreFile . $rutids ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
 
-	<? }
-	}
-	//}
+<? }
+}
+//}
 
-	?>
+?>

@@ -7,8 +7,8 @@ include("../inc/fechas.func.php");
 include("../inc/nombres.func.php");
 Conectarse();
 
-$directorio = "https://multiseguros.com.do/Seg_V2/images/";
-$logo = "https://multiseguros.com.do/Seg_V2/images/Aseguradora/";
+$directorio = "https://multiseguros.com.do/MultisegurosWeb/images/";
+$logo = "https://multiseguros.com.do/MultisegurosWeb/images/Aseguradora/";
 
 
 date_default_timezone_set('America/Santo_Domingo');
