@@ -1429,7 +1429,7 @@ function sendSMS($idTrans)
     ". Su MARBETE-> ";
 
   $linkPdfPoliza =
-    "https://multiseguros.com.do/ws2/TareasProg/GenerarReporteAseguradoraPdfUnico.php?sms=0&id_trans=" .
+    "https://multiseguros.com.do/MultisegurosApi/TareasProg/GenerarReporteAseguradoraPdfUnico.php?sms=0&id_trans=" .
     $row["id"];
 
   $urlSMS = "https://apismsi.aldeamo.com/SmsiWS/smsSendPost/";

@@ -45,7 +45,7 @@ if ($_REQUEST['idApi'] == '2wessd@d3e') {
 	//$_POST['producto'] 			= $_REQUEST['producto'];
 	$_POST['serv_adc'] = $_REQUEST['serv_adc'];
 	if (!empty($f1)) {
-		$_POST['fecha_inicio'] = $f1[2]."-".$f1[1]."-".$f1[0];
+		$_POST['fecha_inicio'] = $f1[2] . "-" . $f1[1] . "-" . $f1[0];
 	} else {
 		$_POST['fecha_inicio'] = $_REQUEST['fecha_inicio'];
 	}
@@ -78,44 +78,44 @@ if ($_POST) {
 
 		$_POST['fecha_inicio'] = $_POST['fecha_inicio'];
 	}
-		// Validar el Vehiculo 
-		$model = validateModel($_POST['marca'], $_POST['modelo'], $_POST['tipo']);
-		if($model != 'Ok'){
-			exit("41 /".$model."/00 ");
-		}
-			//Validar Placa
-/*	$validarPlaca = validatePlaca($_REQUEST['placa'], $_REQUEST['tipo'] );
+	// Validar el Vehiculo 
+	$model = validateModel($_POST['marca'], $_POST['modelo'], $_POST['tipo']);
+	if ($model != 'Ok') {
+		exit("41 /" . $model . "/00 ");
+	}
+	//Validar Placa
+	/*	$validarPlaca = validatePlaca($_REQUEST['placa'], $_REQUEST['tipo'] );
 	if($validarPlaca != 'Ok'){
 		exit("42 /".$validarPlaca."/00 ");
 	}*/
-		//--------Validar Placa----------------------------------------------------------------------------
-		$chart = substr($_POST['placa'], 0, 1);//Optiene el caracter
+	//--------Validar Placa----------------------------------------------------------------------------
+	$chart = substr($_POST['placa'], 0, 1); //Optiene el caracter
 
-		$queryT = mysql_query("SELECT * FROM `char_plates` WHERE `char` = '".$chart."';");
-		 $rowT = mysql_fetch_array($queryT);
-		if($rowT){
-			$query2 = mysql_query("SELECT `type_id` FROM `char_type` WHERE `char_plates_id` = '".$rowT['id']."'");
-			$count = 0;
-			while($row = mysql_fetch_array($query2)){
-				if($row['type_id'] == $_POST['tipo']){
-					$count++;
-				}
+	$queryT = mysql_query("SELECT * FROM `char_plates` WHERE `char` = '" . $chart . "';");
+	$rowT = mysql_fetch_array($queryT);
+	if ($rowT) {
+		$query2 = mysql_query("SELECT `type_id` FROM `char_type` WHERE `char_plates_id` = '" . $rowT['id'] . "'");
+		$count = 0;
+		while ($row = mysql_fetch_array($query2)) {
+			if ($row['type_id'] == $_POST['tipo']) {
+				$count++;
 			}
-			if($count == 0){
-				$uid = $_POST['usuario'];
-				$tipo = 2;
-				$descrip = '{ "Placa": "'.$_POST['placa'].'", "Tipo":"'.$_POST['tipo'] .'", "Agencia": "'.$_POST['xID'].'" }';
-				$r2 = mysql_query("
+		}
+		if ($count == 0) {
+			$uid = $_POST['usuario'];
+			$tipo = 2;
+			$descrip = '{ "Placa": "' . $_POST['placa'] . '", "Tipo":"' . $_POST['tipo'] . '", "Agencia": "' . $_POST['xID'] . '" }';
+			$r2 = mysql_query("
 				INSERT INTO auditoria_ventas 
 				(user_id,transaccion_type,description,created_at) 
 				VALUES
-				('$uid','$tipo','$descrip','".date('Y/m/d H:i:s')."')");
-				//AuditoriaVentas($_POST['usuario'], '2', '{ "Placa": "'.$_POST['placa'].'", "Tipo":"'.$_POST['tipo'] .'", "Agencia": "'.$_POST['xID'].'" }');
-				exit("51 /El numero de placa no coincide con el tipo de vehículo indicado/00 ");
-			}	
+				('$uid','$tipo','$descrip','" . date('Y/m/d H:i:s') . "')");
+			//AuditoriaVentas($_POST['usuario'], '2', '{ "Placa": "'.$_POST['placa'].'", "Tipo":"'.$_POST['tipo'] .'", "Agencia": "'.$_POST['xID'].'" }');
+			exit("51 /El numero de placa no coincide con el tipo de vehículo indicado/00 ");
 		}
-	
-		//-------------------------------------------------------------------------------------------------
+	}
+
+	//-------------------------------------------------------------------------------------------------
 
 	//echo "v: ".$_POST['vigencia_poliza'];
 	if (IfVigencia($_REQUEST['vigencia_poliza']) == '15') {
@@ -176,16 +176,16 @@ if ($_POST) {
 		exit('14/Usuario o Clave incorrectos/00');
 	}
 	// Validar si tiene la direccion ------------------------------------------------------------------------------------------------------
-	if(!$_REQUEST['direccion'] OR $_REQUEST['direccion'] == " "){
-		$array = explode('-',$_POST['xID']);
+	if (!$_REQUEST['direccion'] or $_REQUEST['direccion'] == " ") {
+		$array = explode('-', $_POST['xID']);
 		$query = mysql_query("
 		SELECT * FROM  agencia_via
-		WHERE num_agencia='" . $array[0]. "' LIMIT 1");
+		WHERE num_agencia='" . $array[0] . "' LIMIT 1");
 		$row = mysql_fetch_array($query);
 		$_POST['direccion'] = $row['calle'];
 		$_POST['ciudad']  = $row['ciudad'];
 	}
-//-------------------------------------------------------------------------------------------------
+	//-------------------------------------------------------------------------------------------------
 
 	/*PARA REGISTRAR DATOS DEL USUARIO*/
 	mysql_query(
@@ -239,7 +239,7 @@ if ($_POST) {
 	$POSTaseguradora = $_POST['aseguradora'];
 
 	//$xID 	= "WEB-".$_POST['user_id'].date('Ymdhis');
-	$url = "https://multiseguros.com.do/ws6_3_8/Seguros/GET_Seguro.php" .
+	$url = "https://multiseguros.com.do/MultisegurosApi/Seguros/GET_Seguro.php" .
 		"?usuario=" . trim($_POST['usuario']) .
 		"&xID=" . $_POST['xID'] .
 		"&password=" . trim($_POST['clave']) .

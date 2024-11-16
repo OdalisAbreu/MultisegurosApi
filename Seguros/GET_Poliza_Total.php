@@ -48,7 +48,7 @@ if ($_REQUEST['idApi'] == '2wessd@d3e') {
 	//$_POST['producto'] 			= $_REQUEST['producto'];
 	$_POST['serv_adc'] = $_REQUEST['serv_adc'];
 	if (!empty($f1)) {
-		$_POST['fecha_inicio'] = $f1[2]."-".$f1[1]."-".$f1[0];
+		$_POST['fecha_inicio'] = $f1[2] . "-" . $f1[1] . "-" . $f1[0];
 	} else {
 		$_POST['fecha_inicio'] = $_REQUEST['fecha_inicio'];
 	}
@@ -78,99 +78,95 @@ if ($_POST) {
 		exit("22/Vigencia no permitida/00 ");
 	}
 	//valida la nacionalidad
-	if($_POST['nacionalidad'] ){
+	if ($_POST['nacionalidad']) {
 		$nacionalidad = $_POST['nacionalidad'];
-	}else{
+	} else {
 		$nacionalidad = 'Domnicano';
-		
 	}
 	// Validar el Vehiculo 
 	$model = validateModel($_POST['marca'], $_POST['modelo'], $_POST['tipo']);
-	if($model != 'Ok'){
-		exit("41 /".$model."/00 ");
+	if ($model != 'Ok') {
+		exit("41 /" . $model . "/00 ");
 	}
 	//Validar Placa
-	$validarPlaca = validatePlaca($_REQUEST['placa'], $_REQUEST['tipo'] );
-	if($validarPlaca != 'Ok'){
-		exit("42 /".$validarPlaca."/00 ");
+	$validarPlaca = validatePlaca($_REQUEST['placa'], $_REQUEST['tipo']);
+	if ($validarPlaca != 'Ok') {
+		exit("42 /" . $validarPlaca . "/00 ");
 	}
-		//--------Validar Placa----------------------------------------------------------------------------
-		$chart = substr($_POST['placa'], 0, 1);//Optiene el caracter
+	//--------Validar Placa----------------------------------------------------------------------------
+	$chart = substr($_POST['placa'], 0, 1); //Optiene el caracter
 
-		$queryT = mysql_query("SELECT * FROM `char_plates` WHERE `char` = '".$chart."';");
-		 $rowT = mysql_fetch_array($queryT);
-		if($rowT){
-			$query2 = mysql_query("SELECT `type_id` FROM `char_type` WHERE `char_plates_id` = '".$rowT['id']."'");
-			$count = 0;
-			while($row = mysql_fetch_array($query2)){
-				if($row['type_id'] == $_POST['tipo']){
-					$count++;
-				}
+	$queryT = mysql_query("SELECT * FROM `char_plates` WHERE `char` = '" . $chart . "';");
+	$rowT = mysql_fetch_array($queryT);
+	if ($rowT) {
+		$query2 = mysql_query("SELECT `type_id` FROM `char_type` WHERE `char_plates_id` = '" . $rowT['id'] . "'");
+		$count = 0;
+		while ($row = mysql_fetch_array($query2)) {
+			if ($row['type_id'] == $_POST['tipo']) {
+				$count++;
 			}
-			if($count == 0){
-				$uid = $_POST['usuario'];
-				$tipo = 2;
-				$descrip = '{ "Placa": "'.$_POST['placa'].'", "Tipo":"'.$_POST['tipo'] .'", "Agencia": "'.$_POST['xID'].'" }';
-				$r2 = mysql_query("
+		}
+		if ($count == 0) {
+			$uid = $_POST['usuario'];
+			$tipo = 2;
+			$descrip = '{ "Placa": "' . $_POST['placa'] . '", "Tipo":"' . $_POST['tipo'] . '", "Agencia": "' . $_POST['xID'] . '" }';
+			$r2 = mysql_query("
 				INSERT INTO auditoria_ventas 
 				(user_id,transaccion_type,description,created_at) 
 				VALUES
-				('$uid','$tipo','$descrip','".date('Y/m/d H:i:s')."')");
-				//AuditoriaVentas($_POST['usuario'], '2', '{ "Placa": "'.$_POST['placa'].'", "Tipo":"'.$_POST['tipo'] .'", "Agencia": "'.$_POST['xID'].'" }');
-				exit("51 /El numero de placa no coincide con el tipo de vehículo indicado/00 ");
-			}	
+				('$uid','$tipo','$descrip','" . date('Y/m/d H:i:s') . "')");
+			//AuditoriaVentas($_POST['usuario'], '2', '{ "Placa": "'.$_POST['placa'].'", "Tipo":"'.$_POST['tipo'] .'", "Agencia": "'.$_POST['xID'].'" }');
+			exit("51 /El numero de placa no coincide con el tipo de vehículo indicado/00 ");
 		}
-	
-		//-------------------------------------------------------------------------------------------------
+	}
+
+	//-------------------------------------------------------------------------------------------------
 	//Valida el total si la orden lo contiene
-	if($_POST['total']){
-		
+	if ($_POST['total']) {
+
 		//$monto_seguro = IfMontoTarifasHistory($_POST['tipo'], $_POST['vigencia_poliza']);
 		$queryT = mysql_query("
 		   SELECT id,veh_tipo,3meses,6meses,12meses 
 		   FROM seguro_tarifas 
-		   WHERE veh_tipo ='".$_POST['tipo']."'  LIMIT 1");
+		   WHERE veh_tipo ='" . $_POST['tipo'] . "'  LIMIT 1");
 		$rowT = mysql_fetch_array($queryT);
 
 		if ($_POST['vigencia_poliza'] == 3)  $monto_poliza = $rowT['3meses'];
 		if ($_POST['vigencia_poliza'] == 6)  $monto_poliza = $rowT['6meses'];
 		if ($_POST['vigencia_poliza'] == 12) $monto_poliza = $rowT['12meses'];
 
-			// Validar si tiene servicios 
-		if($_POST['serv_adc'] == 0){
-			if ($monto_poliza == $_POST['total']){
-
-			}else{
-				exit("40 /El valor enviado: ".$_POST['total']." no corresponde al valor real de la factura: ".$monto_poliza."/00 ");
+		// Validar si tiene servicios 
+		if ($_POST['serv_adc'] == 0) {
+			if ($monto_poliza == $_POST['total']) {
+			} else {
+				exit("40 /El valor enviado: " . $_POST['total'] . " no corresponde al valor real de la factura: " . $monto_poliza . "/00 ");
 			}
-		}else{
+		} else {
 			$montoTotalServicio = 0;
 			$porciones = explode("-", $_POST['serv_adc']);
-			
+
 			for ($i = 0; $i < count($porciones); $i++) {
-				
+
 				if ($porciones[$i] > 0) {
-					
-				//	$MontoServ = MontoServicioHistory($porciones[$i], $_POST['vigencia_poliza']);
+
+					//	$MontoServ = MontoServicioHistory($porciones[$i], $_POST['vigencia_poliza']);
 					$r6 = mysql_query("SELECT id, 3meses, 6meses, 12meses FROM servicios WHERE id='" . $porciones[$i] . "'LIMIT 1");
-							if ($porciones[$i] > 0) {
-								while ($row6 = mysql_fetch_array($r6)) {
-									if ($_POST['vigencia_poliza'] == 3)  $MontoServ = $row6['3meses'];
-									if ($_POST['vigencia_poliza'] == 6)  $MontoServ = $row6['6meses'];
-									if ($_POST['vigencia_poliza'] == 12) $MontoServ  = $row6['12meses'];
-								}
-							}
-						$montoTotalServicio = 	$montoTotalServicio + $MontoServ;
+					if ($porciones[$i] > 0) {
+						while ($row6 = mysql_fetch_array($r6)) {
+							if ($_POST['vigencia_poliza'] == 3)  $MontoServ = $row6['3meses'];
+							if ($_POST['vigencia_poliza'] == 6)  $MontoServ = $row6['6meses'];
+							if ($_POST['vigencia_poliza'] == 12) $MontoServ  = $row6['12meses'];
+						}
+					}
+					$montoTotalServicio = 	$montoTotalServicio + $MontoServ;
 				}
 			}
-			$totalFactura = $monto_poliza + $montoTotalServicio;//Acumula el total de la factura
-			if ($totalFactura == $_POST['total']){
-
-			}else{
-				exit("40 /El valor enviado: ".$_POST['total']." no corresponde al valor real de la factura: ".$totalFactura."/00 ");
+			$totalFactura = $monto_poliza + $montoTotalServicio; //Acumula el total de la factura
+			if ($totalFactura == $_POST['total']) {
+			} else {
+				exit("40 /El valor enviado: " . $_POST['total'] . " no corresponde al valor real de la factura: " . $totalFactura . "/00 ");
 			}
 		}
-		
 	}
 
 
@@ -226,16 +222,16 @@ if ($_POST) {
 	}
 
 	// Validar si tiene la direccion ------------------------------------------------------------------------------------------------------
-	if(!$_REQUEST['direccion'] OR $_REQUEST['direccion'] == " "){
-		$array = explode('-',$_POST['xID']);
+	if (!$_REQUEST['direccion'] or $_REQUEST['direccion'] == " ") {
+		$array = explode('-', $_POST['xID']);
 		$query = mysql_query("
 		SELECT * FROM  agencia_via
-		WHERE num_agencia='" . $array[0]. "' LIMIT 1");
+		WHERE num_agencia='" . $array[0] . "' LIMIT 1");
 		$row = mysql_fetch_array($query);
 		$_POST['direccion'] = $row['calle'];
 		$_POST['ciudad']  = $row['ciudad'];
 	}
-//-------------------------------------------------------------------------------------------------
+	//-------------------------------------------------------------------------------------------------
 
 	/*PARA REGISTRAR DATOS DEL USUARIO*/
 	mysql_query(
@@ -252,7 +248,7 @@ if ($_POST) {
 		'" . $_POST['telefono1'] . "',
 		'" . $_POST['email'] . "',
 		'" . $_POST['ciudad'] . "',
-		'".$nacionalidad ."',
+		'" . $nacionalidad . "',
 		'" . date("Y-m-d H:i:s") . "'
 		
 		)"
@@ -290,7 +286,7 @@ if ($_POST) {
 	$POSTaseguradora = $_POST['aseguradora'];
 
 	//$xID 	= "WEB-".$_POST['user_id'].date('Ymdhis');
-	$url = "https://multiseguros.com.do/ws6_3_8/Seguros/GET_Seguro.php" .
+	$url = "https://multiseguros.com.do/MultisegurosApi/Seguros/GET_Seguro.php" .
 		"?usuario=" . trim($_POST['usuario']) .
 		"&xID=" . $_POST['xID'] .
 		"&password=" . trim($_POST['clave']) .
@@ -326,19 +322,19 @@ if ($_POST) {
 	$respuesta = explode("/", $getWS);
 
 
-		//Guarda el registro de la venta de la poliza 
-		
-		
+	//Guarda el registro de la venta de la poliza 
+
+
 
 	error_log(json_encode($respuesta));
 	// RESPUESTA RECARGA ENVIADA.gg
 	if ($respuesta[0] == '00') {
 		//RETORNARLE AL PROGRAMADOR
 		Auditoria($user['user'], $user['password'], $user['tipo_conex'], 'Seguro Procesado Correctamente ID:' . $respuesta[2] . '', 'venta_ok', '00', '', $user['balance']);
-		
+
 		$records = new records;
 		$record = $records->newRecord($_POST['user_id'], 'Venta Poliza', $respuesta[2]);
-	
+
 		//PARA GUARDAR EL HISTORIAL DE MONTO AL MOMENTO DE VENDER
 		function VehiculoHistory($id)
 		{
