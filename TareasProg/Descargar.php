@@ -1,13 +1,13 @@
 <?
 
 //EJEMPLO 8
-$filename = $_GET['fecha'].".pdf";
-$file_example = $_SERVER['DOCUMENT_ROOT']."/ws6_3_8/TareasProg/PDF/CLIENTES/".$_GET['user_id']."/".$filename."";
-	
+$filename = $_GET['fecha'] . ".pdf";
+$file_example = $_SERVER['DOCUMENT_ROOT'] . "PDF/CLIENTES/" . $_GET['user_id'] . "/" . $filename . "";
+
 
 header('Content-Description: File Transfer');
 header('Content-Type: text/pdf');
-header('Content-Disposition: attachment; filename='.basename($file_example));
+header('Content-Disposition: attachment; filename=' . basename($file_example));
 header('Content-Transfer-Encoding: binary');
 header('Expires: 0');
 header('Cache-Control: must-revalidate');
@@ -20,7 +20,7 @@ readfile($file_example);
 ?>
 
 <script>
-	$(document).ready(function(e) { 
-		<?=unlink($file_example)?> 
-	}
+	$(document).ready(function(e) {
+				<?= unlink($file_example) ?>
+			}
 </script>
