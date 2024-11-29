@@ -505,8 +505,9 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
     ';
-
+$html .= 'Casi Entro';
 while ($RowHist = mysql_fetch_array($QueryH)) {
+  $html .= ' Entro';
   if ($RowHist['tipo'] == 'serv') {
     $html .= ' Entro<td>
       <div align="center" style="color:#6886FD;">';
