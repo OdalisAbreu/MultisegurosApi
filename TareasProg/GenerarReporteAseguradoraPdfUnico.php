@@ -505,20 +505,25 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
     ';
-$html .= 'Casi Entro';
-while ($RowHist = mysql_fetch_array($QueryH)) {
+$QueryH5 = mysql_query(
+  "select * from seguro_trans_history   
+	WHERE id_trans ='" .
+    $_GET['id_trans'] .
+    "'"
+);
+while ($RowHist2 = mysql_fetch_array($QueryH5)) {
   $html .= ' Entro';
-  if ($RowHist['tipo'] == 'serv') {
+  if ($RowHist2['tipo'] == 'serv') {
     $html .= ' Entro<td>
       <div align="center" style="color:#6886FD;">';
-    if (ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial (Grua)") {
+    if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
       $html .=
         '
          <br>Asistencia Vial <br>
           809 699 2008';
     }
 
-    if (ServAdicHistory($RowHist['id_serv_adc']) == "Casa del Conductor") {
+    if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
       $html .=
         '
           <br>Casa del Conductor <br>
