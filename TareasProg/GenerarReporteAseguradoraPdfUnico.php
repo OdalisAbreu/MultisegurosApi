@@ -499,7 +499,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
   </tr>
 
 <tr>
-<td width="50px">
+<td width="80px">
   <div align="center" valign="middle" style="color:#6886FD;">
     <br>Asistencia Vial <br>
     809 699 2008
