@@ -528,15 +528,15 @@ while ($rDescp = mysql_fetch_array($Descp)) {
 }
 $html .= ' 
  
- </table>
- 
-  </td>
-  <td align="center" valign="middle" style="color:#6886FD">
-  <br>Asistencia Vial <br>
+</td>
+<td align="center" valign="middle" style="color:#6886FD">
+<br>Asistencia Vial <br>
 Casa del Conductor <br>
 809 381 2424
-  </td>
+</td>
 </tr>
+ </table>
+ 
 
 </table>
 					
