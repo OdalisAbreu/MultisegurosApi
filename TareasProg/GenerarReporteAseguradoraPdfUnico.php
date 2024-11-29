@@ -504,14 +504,31 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
     <td width="100px">
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
-    <td width="100px">
-      <div align="center" style="color:#6886FD;">
-          <br>Asistencia Vial <br>
-          809 699 2008
+    ';
+
+while ($RowHist = mysql_fetch_array($QueryH)) {
+  if ($RowHist['tipo'] == 'serv') {
+    $html .= '<td>
+      <div align="center" style="color:#6886FD;">';
+    if(ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial"){
+      $html .=
+      '
+         <br>Asistencia Vial <br>
+          809 699 2008';
+    }
+
+    if(ServAdicHistory($RowHist['id_serv_adc']) == "Casa del Conductor"){
+      $html .=
+      '
           <br>Casa del Conductor <br>
-          809 381 2424
+          809 381 2424';
+    }
+    $html .= '
       </div>    
-    </td>
+    </td>';
+}
+
+$html .= '
     </td> 
 </tr>
 
