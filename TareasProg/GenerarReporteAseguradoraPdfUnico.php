@@ -499,7 +499,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 </td>
   </tr>
 
-<tr style="margin-top:-250px">
+<tr cellspacing="0">
     <td align="left">
     <td width="100px">
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
@@ -520,7 +520,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 <tr>
   <td align="left" style="font-size:19px;">
   
-  <table cellpadding="1" width="135px">
+  <table cellpadding="1" width="135px" cellspacing="0">
 ';
 
 $Descp = mysql_query(
