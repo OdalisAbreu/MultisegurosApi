@@ -499,6 +499,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
   </tr>
 
 <tr>
+  <td align="left">
     <td>
       <img src="' . $logo . $NombreImg . '"  alt="" width="50px"/>
     </td>
@@ -510,6 +511,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
         809 381 2424
       </div>
     </td> 
+  </td>
 </tr>
 
 
