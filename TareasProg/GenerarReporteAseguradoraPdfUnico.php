@@ -501,7 +501,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 <tr>
     <td align="left">
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
-      <div align="center" valign="middle" style="color:#6886FD; padding-top:-50px">
+      <div align="center" style="color:#6886FD; padding-top:-50px">
         <br>Asistencia Vial <br>
         809 699 2008
         <br>Casa del Conductor <br>
