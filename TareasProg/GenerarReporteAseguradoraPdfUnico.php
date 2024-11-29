@@ -512,9 +512,8 @@ $QueryH5 = mysql_query(
     "'"
 );
 while ($RowHist2 = mysql_fetch_array($QueryH5)) {
-  $html .= ' Entro';
   if ($RowHist2['tipo'] == 'serv') {
-    $html .= ' Entro<td>
+    $html .= ' <td>
       <div align="center" style="color:#6886FD;">';
     if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
       $html .=
