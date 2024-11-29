@@ -498,7 +498,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
     </td>
   </tr>
 
-<tr>
+<tr style="max-width:100px">
   <td>
     <div align="center" valign="middle" style="color:#6886FD;">
       <br>Asistencia Vial <br>
