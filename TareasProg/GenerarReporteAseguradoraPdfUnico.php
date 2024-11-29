@@ -508,7 +508,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 
 while ($RowHist = mysql_fetch_array($QueryH)) {
   if ($RowHist['tipo'] == 'serv') {
-    $html .= '<td>
+    $html .= ' Entro<td>
       <div align="center" style="color:#6886FD;">';
     if (ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial (Grua)") {
       $html .=
