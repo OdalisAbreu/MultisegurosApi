@@ -504,7 +504,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
     <td width="100px">
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
-    <td>
+    <td width="100px">
       <div align="center" style="color:#6886FD;">
           <br>Asistencia Vial <br>
           809 699 2008
