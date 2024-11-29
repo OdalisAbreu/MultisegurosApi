@@ -505,13 +505,13 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
   '"  alt="" width="100px"/></td>
 </tr>
 
-<tr>
 <td align="center" valign="middle" style="color:#6886FD">
 <br>Asistencia Vial <br>
   809 699 2008
   <br>Casa del Conductor <br>
   809 381 2424
 </td>
+<tr>
   <td align="left" style="font-size:19px;">
   
   <table cellpadding="1" width="135px">
