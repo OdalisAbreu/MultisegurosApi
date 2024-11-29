@@ -501,8 +501,8 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 
 <tr style="margin-top:-250px">
     <td align="left">
-    <td>
-      <img src="' . $logo . $NombreImg . '"  alt=""/>
+    <td width="100px">
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
     <td>
       <div align="center" style="color:#6886FD;">
