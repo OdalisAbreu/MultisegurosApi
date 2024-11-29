@@ -495,7 +495,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 &nbsp;&nbsp;5- Obtenga el nombre y dirección de los lesionados y testigos. <br>
 <br>
 <b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b><br>
-   <div align="center" style="color:#6886FD;">
+   <div align="left" style="color:#6886FD; font-size:18px;">
         <br>Asistencia Vial <br>
         809 699 2008
         <br>Casa del Conductor <br>
@@ -504,7 +504,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 </td>
   </tr>
 
-<tr>
+<tr style="margin-top:-50px">
     <td align="left">
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td> 
