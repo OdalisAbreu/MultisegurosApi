@@ -45,11 +45,11 @@ switch ($id_aseguradora) {
 		break;
 }
 
-if($row['user_id'] == 89){
+if ($row['user_id'] == 89) {
 	$image = '';
 	$telefono = '<br> +1 809 633 0333';
 	$frase = 'CSQ';
-}else{
+} else {
 	$image = '<img src="https://multiseguros.com.do/Seg_V2/images/VIA/4.jpg" height="37" />';
 	$telefono = '<br> +1 809 200 1842';
 	$frase = 'ES F&Aacute;CIL, ES VIA.';
@@ -269,13 +269,13 @@ $html .= '
     font-weight: bold;
     font-size: 42px; " valign="top">
 	<td>
-	<font style="font-size:30px"> Servicio al Cliente</font> 
-		'. $image .'
-		'. $telefono .'
+	<font style="font-size:30px"> Servicio al Cliente 2</font> 
+		' . $image . '
+		' . $telefono . '
 	</td>
 	<td valign="middle" align="left"> 
 		<div style="padding-top:10px margin-left:7px; height:25px !important; font-size: 44px;">
-			'. $frase .'
+			' . $frase . '
 		</div>
 	</td>
 </tr>
