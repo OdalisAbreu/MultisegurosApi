@@ -528,7 +528,10 @@ while ($rDescp = mysql_fetch_array($Descp)) {
 }
 $html .= ' 
  
+</td>
+</tr>
 
+<tr>
 <td align="center" valign="middle" style="color:#6886FD">
 <br>Asistencia Vial <br>
 Casa del Conductor <br>
