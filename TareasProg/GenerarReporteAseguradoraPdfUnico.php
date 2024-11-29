@@ -532,7 +532,7 @@ $html .= '
  </table> 
  </td>
  <td>
- <table cellpadding="1" width="135px">
+ <table cellpadding="1" width="50px">
   <tr>
    <td>
     <div align="center" valign="middle" style="color:#6886FD;">
