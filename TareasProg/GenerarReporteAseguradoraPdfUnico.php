@@ -502,6 +502,14 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
      <td colspan="2" align="left">
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
+    <td width="50px">
+      <div align="center" valign="middle" style="color:#6886FD;">
+        <br>Asistencia Vial <br>
+        809 699 2008
+        <br>Casa del Conductor <br>
+        809 381 2424
+      </div>
+    </td> 
 </tr>
 
 
@@ -528,21 +536,6 @@ while ($rDescp = mysql_fetch_array($Descp)) {
 		</tr>';
 }
 $html .= ' 
-
-          <td>
-              <table cellpadding="1" width="100px">
-                <tr>
-                <td>
-                  <div align="center" valign="middle" style="color:#6886FD;">
-                    <br>Asistencia Vial <br>
-                    809 699 2008
-                    <br>Casa del Conductor <br>
-                    809 381 2424
-                  </div>
-                </td>  
-                </tr>
-              </table>
-              </td>
  
  </table> 
  
