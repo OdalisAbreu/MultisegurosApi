@@ -528,23 +528,25 @@ while ($rDescp = mysql_fetch_array($Descp)) {
 		</tr>';
 }
 $html .= ' 
+
+          <td>
+              <table cellpadding="1" width="100px">
+                <tr>
+                <td>
+                  <div align="center" valign="middle" style="color:#6886FD;">
+                    <br>Asistencia Vial <br>
+                    809 699 2008
+                    <br>Casa del Conductor <br>
+                    809 381 2424
+                  </div>
+                </td>  
+                </tr>
+              </table>
+              </td>
  
  </table> 
- </td>
- <td>
- <table cellpadding="1" width="50px">
-  <tr>
-   <td>
-    <div align="center" valign="middle" style="color:#6886FD;">
-      <br>Asistencia Vial <br>
-      809 699 2008
-      <br>Casa del Conductor <br>
-      809 381 2424
-    </div>
-  </td>  
-  </tr>
- </table>
- </td>
+ 
+  </td>
 </tr>
 </table>
 					 </td>
