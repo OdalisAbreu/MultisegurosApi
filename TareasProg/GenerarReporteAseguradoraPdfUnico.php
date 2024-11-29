@@ -499,17 +499,17 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
   </tr>
 
 <tr>
-<td width="80px">
-  <div align="center" valign="middle" style="color:#6886FD;">
-    <br>Asistencia Vial <br>
-    809 699 2008
-    <br>Casa del Conductor <br>
-    809 381 2424
-  </div>
-</td> 
-     <td colspan="2" align="left">
-      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
-    </td>
+  <td colspan="2" align="left" whidth="100px">
+    <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
+  </td>
+  <td width="80px">
+    <div align="center" valign="middle" style="color:#6886FD;">
+      <br>Asistencia Vial <br>
+      809 699 2008
+      <br>Casa del Conductor <br>
+      809 381 2424
+    </div>
+  </td> 
 </tr>
 
 
