@@ -1493,8 +1493,10 @@ function sendSMS($idTrans)
   $urlSMS = "https://mscloud.darielabreu.com/api/v1/template/pdf";
 
   $celCliente = getTelefonoCliente($row["id"]);
+
+
   $data =
-    '{"whatsapp_account_id": 1, "store_name":"' .
+    '{"whatsapp_account_id": "1", "store_name":"' .
     $laAgencia["vendedor"] .
     '","client_phone": "' .
     $celCliente .
