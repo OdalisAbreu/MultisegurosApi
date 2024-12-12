@@ -1400,6 +1400,64 @@ function RepMontoServiciodosCosto($id, $serv_adc)
   return $rprec22['costo'];
 }
 
+// function sendSMS($idTrans)
+// {
+//   $query = mysql_query(
+//     "select * from seguro_transacciones   
+// 	WHERE id ='" .
+//       $idTrans .
+//       "' LIMIT 1"
+//   );
+
+//   $row = mysql_fetch_array($query);
+
+//   $laAgencia = getAgencia($row["id"]);
+//   $poliza =
+//     GetPrefijo($row['id_aseg']) .
+//     '-' .
+//     str_pad($row['id_poliza'], 6, "0", STR_PAD_LEFT);
+
+//   $mensajeSMS =
+//     "MultiSeguros-Gracias por comprar su Seguro de Ley en " .
+//     $laAgencia["vendedor"] .
+//     ". No. Poliza " .
+//     $poliza .
+//     " Vigencia del " .
+//     FechaListPDFn($row['fecha_inicio']) .
+//     " al " .
+//     FechaListPDFin($row['fecha_fin']) .
+//     ". Su MARBETE-> ";
+
+//   $linkPdfPoliza =
+//     "https://multiseguros.com.do/ws2/TareasProg/GenerarReporteAseguradoraPdfUnico.php?sms=0&id_trans=" .
+//     $row["id"];
+
+//   $urlSMS = "https://apismsi.aldeamo.com/SmsiWS/smsSendPost/";
+
+//   // $data = array(
+//   // 	"country" => "1",
+//   // 	"message" => $mensajeSMS,
+//   // 	"addresseeList" => array(
+//   // 		"mobile" => "8293805036",
+//   // 		"url" => $linkPdfPoliza
+//   // 	)
+//   // );
+
+
+//   $celCliente = getTelefonoCliente($row["id"]);
+
+//   $data =
+//     '{"country": "1","message":"' .
+//     $mensajeSMS .
+//     '","addresseeList": [{"mobile":"' .
+//     $celCliente .
+//     '","url":"' .
+//     $linkPdfPoliza .
+//     '"}]}';
+
+//   httpPost($urlSMS, $data, "jgrullon", "jgrullon2021*");
+// }
+
 function sendSMS($idTrans)
 {
   $query = mysql_query(
@@ -1432,32 +1490,30 @@ function sendSMS($idTrans)
     "https://multiseguros.com.do/ws2/TareasProg/GenerarReporteAseguradoraPdfUnico.php?sms=0&id_trans=" .
     $row["id"];
 
-  $urlSMS = "https://apismsi.aldeamo.com/SmsiWS/smsSendPost/";
-
-  // $data = array(
-  // 	"country" => "1",
-  // 	"message" => $mensajeSMS,
-  // 	"addresseeList" => array(
-  // 		"mobile" => "8293805036",
-  // 		"url" => $linkPdfPoliza
-  // 	)
-  // );
+  $urlSMS = "https://mscloud.darielabreu.com/api/v1/template/pdf";
 
   $celCliente = getTelefonoCliente($row["id"]);
-
   $data =
-    '{"country": "1","message":"' .
-    $mensajeSMS .
-    '","addresseeList": [{"mobile":"' .
+    '{"whatsapp_account_id": "1", "store_name":"' .
+    $laAgencia["vendedor"] .
+    '","client_phone": "' .
     $celCliente .
-    '","url":"' .
-    $linkPdfPoliza .
-    '"}]}';
+    '","police_number": "' .
+    $poliza  .
+    '","date_init": "' .
+    FechaListPDFn($row['fecha_inicio']) .
+    '","date_end": "' .
+    FechaListPDFin($row['fecha_fin']) .
+    '","template_name": "' .
+    "enviar_seguro" .
+    '","poliza_id": "' .
+    $row["id"] . '}';
 
-  httpPost($urlSMS, $data, "jgrullon", "jgrullon2021*");
+  httpPost($urlSMS, $data);
 }
 
-function httpPost($url, $data, $username, $password)
+
+function httpPost($url, $data)
 {
   $curl = curl_init();
 
@@ -1466,15 +1522,13 @@ function httpPost($url, $data, $username, $password)
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
-    CURLOPT_TIMEOUT => 30,
+    CURLOPT_TIMEOUT => 0,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "POST",
     CURLOPT_POSTFIELDS => $data,
     CURLOPT_HTTPHEADER => array(
-      "Content-Type: application/json",
-      "cache-control: no-cache"
-    ),
-    CURLOPT_USERPWD => $username . ":" . $password
+      "Content-Type: application/json"
+    )
   ));
 
   $response = curl_exec($curl);

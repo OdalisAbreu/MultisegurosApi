@@ -278,7 +278,7 @@ $html .= '
     font-weight: bold;
     font-size: 42px; " valign="top">
 		<td>
-		<font style="font-size:30px"> Servicio al Cliente 3</font> 
+		<font style="font-size:30px"> Servicio al Cliente</font> 
 			' . $image . '
 			' . $telefono . '
 		</td>
@@ -374,8 +374,44 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
     </td>
   </tr>
 
-<tr>
-	<td colspan="2" align="left"><img src="' . $logo . $NombreImg . '"  alt="" width="100px"/></td>
+<tr cellspacing="0">
+    <td align="left">
+    <td width="100px">
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
+    </td>
+    ';
+$QueryH5 = mysql_query(
+	"select * from seguro_trans_history   
+	WHERE id_trans ='" .
+		$_GET['id_trans'] .
+		"'"
+);
+while ($RowHist2 = mysql_fetch_array($QueryH5)) {
+	if ($RowHist2['tipo'] == 'serv') {
+		$html .= ' <td>
+      <div align="center" style="color:#6886FD;">';
+		if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
+			$html .=
+				'
+         <br>Asistencia Vial <br>
+          809 699 2008';
+		}
+
+		if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
+			$html .=
+				'
+          <br>Casa del Conductor <br>
+          809 381 2424';
+		}
+		$html .= '
+      </div>    
+    </td>';
+	}
+}
+
+
+$html .= '
+    </td> 
 </tr>
 
 <tr>
