@@ -269,7 +269,7 @@ $html .= '
     font-weight: bold;
     font-size: 42px; " valign="top">
 	<td>
-	<font style="font-size:30px"> Servicio al Cliente</font> 
+	<font style="font-size:30px"> Servicio al Cliente 2</font> 
 		' . $image . '
 		' . $telefono . '
 	</td>
