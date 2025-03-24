@@ -583,9 +583,6 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 				<td colspan="2" align="center"><br/>&nbsp;</td>
 				</tr>
 				<tr>
-				<td colspan="2" align="center"><br/>&nbsp;</td>
-				</tr>
-				<tr>
 				<td colspan="2" align="center">
 					<h2>Sin Servicios Opcionales</h2>
 				</td>
@@ -595,6 +592,12 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		$html .= '
 		</table>
 		
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
 		<tr>
 		<td colspan="2" align="center"><br/>&nbsp;</td>
 		</tr>
