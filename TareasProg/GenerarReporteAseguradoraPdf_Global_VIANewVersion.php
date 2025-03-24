@@ -620,10 +620,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		$html .= '
 </table>
 					
-					
-					
-					
-					
+			
 					 </td>
 				</tr>
 		</table>
@@ -702,8 +699,8 @@ if ($html !== '0') {
 
 	if (file_exists($dir)) { ?>
 
-			<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $nombreFile .
-																																				$rutids ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
+		<a href="javascript:void(0)" class="btn btn-success" onclick="location.replace('../ws2/TareasProg/Descargar.php?fecha=<?= $nombreFile .
+																																	$rutids ?>&user_id=<?= $_GET['user_id'] ?>');"><b>Descargar Poliza</b></a>
 
-	<?php }
-	}
+<?php }
+}
