@@ -592,9 +592,10 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 			</tr>';
 		}
 
-
-
 		$html .= '
+		<tr>
+				<td colspan="2" align="center">---------------------------</td>
+				</tr>
 </table>
 					
 			
