@@ -401,22 +401,22 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 			}
 
 			if ($RowHist['tipo'] == 'serv') {
-				$html .= ' <td>
+				$html_servicios_opcionales .= ' <td>
       <div align="center" style="color:#6886FD;">';
 				if (ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial (Grua)") {
-					$html .=
+					$html_servicios_opcionales .=
 						'
          <br>Asistencia Vial <br>
           809 699 2008';
 				}
 
 				if (ServAdicHistory($RowHist['id_serv_adc']) == "Casa del Conductor") {
-					$html .=
+					$html_servicios_opcionales .=
 						'
           <br>Casa del Conductor <br>
           809 381 2424';
 				}
-				$html .= '
+				$html_servicios_opcionales .= '
       </div>    
     </td>';
 			}
