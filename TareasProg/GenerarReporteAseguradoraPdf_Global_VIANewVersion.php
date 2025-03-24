@@ -572,12 +572,11 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		<h2>Servicios Opcionales</h2>
     </td>
   </tr>
-  <tr style="min-height: 80px;">
   ';
 		if (!empty($html_servicios_opcionales)) {
 			$html .= $html_servicios_opcionales;
 		} else {
-			$html .= '
+			$html .= '<tr>
 				<td colspan="2" align="center"><br/>&nbsp;</td>
 				</tr>
 				<tr>
@@ -590,15 +589,15 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 				<td colspan="2" align="center">
 					<h2>Sin Servicios Opcionales</h2>
 				</td>
-			';
+			</tr>';
 		}
 
-		$html .= '</tr>
+		$html .= '
+		</table>
+		
 		<tr>
 				<td colspan="2" align="center">---------------------------</td>
 				</tr>
-</table>
-					
 			
 					 </td>
 				</tr>
