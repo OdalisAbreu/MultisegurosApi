@@ -390,7 +390,6 @@ while ($RowHist2 = mysql_fetch_array($QueryH5)) {
 	if ($RowHist2['tipo'] == 'serv') {
 		$html .= ' <td>
       <div align="center" style="color:#6886FD;">';
-		echo ServAdicHistory($RowHist2['id_serv_adc']);
 		if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
 			$html .=
 				'
