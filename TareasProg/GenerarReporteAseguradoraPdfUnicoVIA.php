@@ -437,24 +437,6 @@ while ($rDescp1 = mysql_fetch_array($Descp1)) {
 $html .= ' 
 				 </table>
 				 <!--primera columna-->
- 
-		</td>
-		<td style="color:#6886FD;" align="center">
-		
-			<!--segunda columna-->
-			<table cellpadding="1" width="100px" border="0" align="center">
-				<tr>
-					<td>Asistencia Vial </td>
-				</tr>
-				<tr>
-					<td>Casa del Conductor </td>
-				</tr>
-				<tr>
-					<td>809-381-2424 </td>
-				</tr>
-			</table>
-			<!--segunda columna-->
-	
 		</td>
 	</tr>
   </table>
