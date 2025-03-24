@@ -371,7 +371,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 &nbsp;&nbsp;5- Obtenga el nombre y dirección de los lesionados y testigos. <br>
 <br>
 <b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b><br>
-    </td>
+ </td>
   </tr>
 
 <tr cellspacing="0">
@@ -409,7 +409,11 @@ while ($RowHist2 = mysql_fetch_array($QueryH5)) {
 	}
 }
 
+
 $html .= '
+    </td> 
+</tr>
+
 <tr>
   <td align="left" style="font-size:19px;">
   
