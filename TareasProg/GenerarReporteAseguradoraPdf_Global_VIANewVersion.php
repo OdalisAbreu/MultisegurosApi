@@ -595,8 +595,13 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		$html .= '
 		</table>
 		
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
 			    <tr>
-				
 					<td style="width:130px;">
 			  <table cellpadding="1" border="0" style="font-size:20px; min-height:80px;">';
 		$Descp1 = mysql_query(
