@@ -595,8 +595,29 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		$html .= '
 		</table>
 		
-		<tr>
-				<td colspan="2" align="center">---------------------------</td>
+				<tr>
+				   <td style="width:130px;">
+						<table cellpadding="1" border="0" style="font-size:20px;">';
+		$Descp1 = mysql_query(
+			"select * from ticket_poliza WHERE id_aseg ='" .
+				$id_aseguradora .
+				"' LIMIT 4"
+		);
+		while ($rDescp1 = mysql_fetch_array($Descp1)) {
+			$html .=
+				'     
+									<tr>
+										<td align="left">' .
+				$rDescp1['ciudad'] .
+				'</td>
+										<td align="left">' .
+				$rDescp1['telefono'] .
+				'</td>
+									</tr>';
+		}
+		$html .=
+			'			
+					</td>
 				</tr>
 			
 					 </td>
