@@ -595,7 +595,6 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 
 
 		$html .= '
-		---------------------------------------------
 </table>
 					
 			
