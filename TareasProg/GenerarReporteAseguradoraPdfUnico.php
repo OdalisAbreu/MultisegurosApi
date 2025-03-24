@@ -578,8 +578,6 @@ $html .= '
     </td>
   </tr>
 
- 
- 10
 </table>';
 // set font
 
