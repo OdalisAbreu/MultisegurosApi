@@ -595,7 +595,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		$html .= '
 			
 						<tr>
-						 <td style="width:130px;">'
+						 <td style="width:130px;">';
 		$Descp1 = mysql_query(
 			"select * from ticket_poliza WHERE id_aseg ='" .
 				$id_aseguradora .
@@ -615,6 +615,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		}
 		$html .=
 			' 
+								</table>
 							</td>
 						</tr>
 			</table>
