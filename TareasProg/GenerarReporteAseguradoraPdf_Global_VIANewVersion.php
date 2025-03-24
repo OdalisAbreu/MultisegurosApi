@@ -463,7 +463,6 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 	font-size: 42px; 
 	height: 200px;" valign="top">
 	<td>
-3
 			<br> 
 		</td>
         <td valign="middle" align="left"> 
@@ -596,6 +595,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 
 
 		$html .= '
+		---------------------------------------------
 </table>
 					
 			
