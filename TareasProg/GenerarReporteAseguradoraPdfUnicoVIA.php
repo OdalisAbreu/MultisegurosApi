@@ -410,16 +410,17 @@ while ($RowHist2 = mysql_fetch_array($QueryH5)) {
 }
 
 $html .= '
-    </td> 
-</tr>
-
-
-
 <tr>
   <td align="left" style="font-size:19px;">
   
-  <table cellpadding="1" width="135px" cellspacing="0">
-';
+  
+  <!--tabla para agrupar-->
+  <table cellpadding="1"  border="0">
+  	<tr>
+		<td  style="width:165px;"> 
+			
+			<!--primera columna-->
+			  <table cellpadding="1" width="138px" border="0">';
 $Descp1 = mysql_query("select * from ticket_poliza WHERE id_aseg ='" . $id_aseguradora . "' LIMIT 4");
 while ($rDescp1 = mysql_fetch_array($Descp1)) {
 	$html .= '     
