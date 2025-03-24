@@ -619,9 +619,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 			'			
 					</td>
 				</tr>
-			
-					 </td>
-				</tr>
+
 		</table>
 		
 		
