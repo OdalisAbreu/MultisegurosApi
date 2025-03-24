@@ -503,30 +503,6 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		<td align="left" ><img src="' .
 			$logo .	$NombreImg .
 			'"  alt="" width="95px"/></td>
-		<td style="width:130px;">
-			  <table cellpadding="1" border="0" style="font-size:20px;">';
-		$Descp1 = mysql_query(
-			"select * from ticket_poliza WHERE id_aseg ='" .
-				$id_aseguradora .
-				"' LIMIT 4"
-		);
-		while ($rDescp1 = mysql_fetch_array($Descp1)) {
-			$html .=
-				'     
-						<tr>
-							<td align="left">' .
-				$rDescp1['ciudad'] .
-				'</td>
-							<td align="left">' .
-				$rDescp1['telefono'] .
-				'</td>
-						</tr>';
-		}
-		$html .=
-			' 
-				 </table>
- 
-		</td>
     </tr>
     <tr>
         <td align="left" width="90"><b>NO. POLIZA:</b></td>
@@ -620,89 +596,33 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 
 
 		$html .= '
-				</td>
+</table>
+					
+			
+					 </td>
 				</tr>
+		</table>
+		
+		
 
-				<tr cellspacing="0">
-					<td align="left">
-					<td width="100px">
-					<img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
-					</td>
-					';
-		$QueryH5 = mysql_query(
-			"select * from seguro_trans_history   
-					WHERE id_trans ='" .
-				$_GET['id_trans'] .
-				"'"
-		);
-		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
-			if ($RowHist2['tipo'] == 'serv') {
-				$html .= ' <td>
-					<div align="center" style="color:#6886FD;">';
-				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
-					$html .=
-						'
-						<br>Asistencia Vial <br>
-						809 699 2008';
-				}
-
-				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
-					$html .=
-						'
-						<br>Casa del Conductor <br>
-						809 381 2424';
-				}
-				$html .= '
-					</div>    
-					</td>';
-			}
-		}
-
-
-		$html .= '
-					</td> 
-				</tr>
+    </td>
+  </tr>
+</table>
+  <tr>
+  	<td colspan="2">&nbsp;</td>
+  </tr>
 
 
 
-				<tr>
-				<td align="left" style="font-size:19px;">
-				
-				<table cellpadding="1" width="135px" cellspacing="0">
-				';
 
-		$Descp = mysql_query(
-			"select * from ticket_poliza WHERE id_aseg ='" . $row['id_aseg'] . "' LIMIT 4"
-		);
-		while ($rDescp = mysql_fetch_array($Descp)) {
-			$html .=
-				'     
-						<tr>
-							<td align="left">' .
-				$rDescp['ciudad'] .
-				'</td>
-							<td align="left">' .
-				$rDescp['telefono'] .
-				'</td>
-						</tr>';
-		}
-		$html .= ' 
-				
-				</table> 
-				
-				</td>
-				</tr>
-				</table>
-									</td>
-								</tr>
-						</table>
-						
-						
 
-					</td>
-				</tr>
+</td>
+	</tr>
+5
+</table>
 
-				</table>';
+
+';
 		// set font
 	}
 }
