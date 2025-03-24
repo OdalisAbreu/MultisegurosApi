@@ -596,8 +596,9 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		</table>
 		
 				<tr>
-				   <td style="width:130px;">
-						<table cellpadding="1" border="0" style="font-size:20px;">';
+				   
+				</tr>
+				<td style="width:130px;">';
 		$Descp1 = mysql_query(
 			"select * from ticket_poliza WHERE id_aseg ='" .
 				$id_aseguradora .
@@ -606,20 +607,21 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 		while ($rDescp1 = mysql_fetch_array($Descp1)) {
 			$html .=
 				'     
-									<tr>
-										<td align="left">' .
+						<tr>
+							<td align="left">' .
 				$rDescp1['ciudad'] .
 				'</td>
-										<td align="left">' .
+							<td align="left">' .
 				$rDescp1['telefono'] .
 				'</td>
-									</tr>';
+						</tr>';
 		}
 		$html .=
-			'			
-					</td>
-				</tr>
+			' 
 
+		</td>
+					 </td>
+				</tr>
 		</table>
 		
 		
