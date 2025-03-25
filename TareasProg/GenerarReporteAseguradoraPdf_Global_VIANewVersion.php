@@ -611,12 +611,11 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 		$QueryH5 = mysql_query(
 			"select * from seguro_trans_history   
 	WHERE id_trans ='" .
-				$_GET['id_trans'] .
+				$row['id'] .
 				"'"
 		);
 
 		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
-			$html .= 'Servicios:' . $RowHist2['tipo'] . '<br>';
 			if ($RowHist2['tipo'] == 'serv') {
 				$html .= ' <td>
       <div align="center" style="color:#6886FD;">';
