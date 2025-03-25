@@ -401,7 +401,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 			}
 
 			if ($RowHist['tipo'] == 'serv') {
-				$html_servicios_opcionales_list .= ' <td>
+				$html_servicios_opcionales_list .= ' <td align="right" valign="top">
       <div align="center" style="color:#6886FD;">';
 				if (ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial (Grua)") {
 					$html_servicios_opcionales_list .=
@@ -608,8 +608,6 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/> 
     </td>
 	</td> 
-</tr>
-<tr>
     ';
 		$html .= $html_servicios_opcionales_list;
 		$html .= '
