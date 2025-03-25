@@ -401,22 +401,22 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 			}
 
 			if ($RowHist['tipo'] == 'serv') {
-				$html_servicios_opcionales .= ' <td>
+				$html_servicios_opcionales_list .= ' <td>
       <div align="center" style="color:#6886FD;">';
 				if (ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial (Grua)") {
-					$html_servicios_opcionales .=
+					$html_servicios_opcionales_list .=
 						'
          <br>Asistencia Vial (Grua)<br>
           809 699 2008';
 				}
 
 				if (ServAdicHistory($RowHist['id_serv_adc']) == "Casa del Conductor") {
-					$html_servicios_opcionales .=
+					$html_servicios_opcionales_list .=
 						'
           <br>Casa del Conductor <br>
           809 381 2424';
 				}
-				$html_servicios_opcionales .= '
+				$html_servicios_opcionales_list .= '
       </div>    
     </td>';
 			}
@@ -608,31 +608,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/> 
     </td>
     ';
-		$html .= $html_servicios_opcionales;
-		while ($RowHist2 = mysql_fetch_array($QueryH)) {
-			if ($RowHist2['tipo'] == 'serv') {
-				$html .= ' <td>
-      <div align="center" style="color:#6886FD;">';
-				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial") {
-					$html .=
-						'
-         <br>Asistencia Vial (Grua)<br>
-          809 699 2008';
-				}
-
-				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
-					$html .=
-						'
-          <br>Casa del Conductor <br>
-          809 381 2424';
-				}
-				$html .= '
-      </div>    
-    </td>';
-			}
-		}
-
-
+		$html .= $html_servicios_opcionales_list;
 		$html .= '
     </td> 
 </tr>
