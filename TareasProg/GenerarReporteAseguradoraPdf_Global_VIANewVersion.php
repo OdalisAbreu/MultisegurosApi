@@ -605,7 +605,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 <tr cellspacing="0">
     <td align="left">
     <td width="100px">
-      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/> ' . $RowHist2['tipo'] . '
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/> 
     </td>
     ';
 		$QueryH5 = mysql_query(
@@ -616,6 +616,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 		);
 
 		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
+			$html .= 'Servicios:' . $RowHist2['tipo'] . '<br>';
 			if ($RowHist2['tipo'] == 'serv') {
 				$html .= ' <td>
       <div align="center" style="color:#6886FD;">';
