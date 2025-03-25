@@ -406,7 +406,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 				if (ServAdicHistory($RowHist['id_serv_adc']) == "Asistencia Vial (Grua)") {
 					$html_servicios_opcionales .=
 						'
-         <br>Asistencia Vial <br>
+         <br>Asistencia Vial (Grua)<br>
           809 699 2008';
 				}
 
@@ -587,73 +587,94 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 					
 					
 					
-<table align="center" cellpadding="2" border="0"  width="250px">
+<table align="center" cellpadding="2" border="0"  width="625px">
   <tr>
-    <td colspan="2" align="left">
-		<h2>Servicios Opcionales</h2>
-    </td>
+    <td colspan="2" style="font-size:18px" align="left">
+El vehículo descrito en el anverso está asegurado bajo la póliza emitida por La Aseguradora, <br>
+sujeto a los términos, límites y condiciones que en ella se expresan y al pago de la prima. <br>
+<br>
+<b>En caso de accidente:</b> <br>
+&nbsp;&nbsp;1- Asista a los lesionados, si los hubiere. Con cuidado, retire los vehículos de la vía. <br>
+&nbsp;&nbsp;2- No acepte responsabilidad al momento del accidente; reserve su derecho. <br>
+&nbsp;&nbsp;3- Obtenga el nombre y la dirección del conductor y el propietario del otro vehículo. <br>
+&nbsp;&nbsp;4- Obtenga el número de placa, aseguradora, y número de póliza. <br>
+&nbsp;&nbsp;5- Obtenga el nombre y dirección de los lesionados y testigos. <br>
+<br>
+<b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b><br>
+
+</td>
   </tr>
-  ';
-		if (!empty($html_servicios_opcionales)) {
-			$html .= $html_servicios_opcionales;
-		} else {
-			$html .= '<tr>
-				<td colspan="2" align="center"><br/>&nbsp;</td>
-				</tr>
-				<tr>
-				<td colspan="2" align="center"><br/>&nbsp;</td>
-				</tr>
-				<tr>
-				<td colspan="2" align="center">
-					<h2>Sin Servicios Opcionales</h2>
-				</td>
-			</tr>';
+
+<tr cellspacing="0">
+    <td align="left">
+    <td width="100px">
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
+    </td>
+    ';
+		$QueryH5 = mysql_query(
+			"select * from seguro_trans_history   
+	WHERE id_trans ='" .
+				$_GET['id_trans'] .
+				"'"
+		);
+		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
+			if ($RowHist2['tipo'] == 'serv') {
+				$html .= ' <td>
+      <div align="center" style="color:#6886FD;">';
+				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
+					$html .=
+						'
+         <br>Asistencia Vial (Grua)<br>
+          809 699 2008';
+				}
+
+				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
+					$html .=
+						'
+          <br>Casa del Conductor <br>
+          809 381 2424';
+				}
+				$html .= '
+      </div>    
+    </td>';
+			}
 		}
+
 
 		$html .= '
-		</table>
-		
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-			    <tr>
-					<td style="width:130px;">
-			  <table cellpadding="1" border="0" style="font-size:20px; min-height:80px;">';
-		$Descp1 = mysql_query(
-			"select * from ticket_poliza WHERE id_aseg ='" .
-				$id_aseguradora .
-				"' LIMIT 4"
+    </td> 
+</tr>
+
+
+
+<tr>
+  <td align="left" style="font-size:19px;">
+  
+  <table cellpadding="1" width="135px" cellspacing="0">
+';
+
+		$Descp = mysql_query(
+			"select * from ticket_poliza WHERE id_aseg ='" . $row['id_aseg'] . "' LIMIT 4"
 		);
-		while ($rDescp1 = mysql_fetch_array($Descp1)) {
+		while ($rDescp = mysql_fetch_array($Descp)) {
 			$html .=
 				'     
-						<tr>
-							<td align="left">' .
-				$rDescp1['ciudad'] .
+        <tr>
+			<td align="left">' .
+				$rDescp['ciudad'] .
 				'</td>
-							<td align="left">' .
-				$rDescp1['telefono'] .
+            <td align="left">' .
+				$rDescp['telefono'] .
 				'</td>
-						</tr>';
+		</tr>';
 		}
-		$html .=
-			' 
-				 </table>
+		$html .= ' 
  
-		</td>
-
-
-				</tr>
-			
+ </table> 
+ 
+  </td>
+</tr>
+</table>
 					 </td>
 				</tr>
 		</table>
@@ -662,22 +683,8 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 
     </td>
   </tr>
-</table>
-  <tr>
-  	<td colspan="2">&nbsp;</td>
-  </tr>
 
-
-
-
-
-</td>
-	</tr>
-5
-</table>
-
-
-';
+</table>';
 		// set font
 	}
 }

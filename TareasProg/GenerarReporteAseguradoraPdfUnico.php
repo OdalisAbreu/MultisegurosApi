@@ -518,7 +518,7 @@ while ($RowHist2 = mysql_fetch_array($QueryH5)) {
     if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
       $html .=
         '
-         <br>Asistencia Vial <br>
+         <br>Asistencia Vial (Grua)<br>
           809 699 2008';
     }
 
