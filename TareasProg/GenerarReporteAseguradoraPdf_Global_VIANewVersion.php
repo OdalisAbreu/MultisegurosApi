@@ -587,7 +587,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 					
 					
 					
-<table align="center" cellpadding="2" border="0"  width="625px">
+<table align="center" cellpadding="2" border="0"  width="250px">
   <tr>
     <td colspan="2" style="font-size:18px" align="left">
 El vehículo descrito en el anverso está asegurado bajo la póliza emitida por La Aseguradora, <br>
@@ -604,77 +604,50 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 
 </td>
   </tr>
-
-<tr cellspacing="0">
-    <td align="left">
-    <td width="100px">
-      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
-    </td>
-    ';
-		$QueryH5 = mysql_query(
-			"select * from seguro_trans_history   
-	WHERE id_trans ='" .
-				$_GET['id_trans'] .
-				"'"
-		);
-		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
-			if ($RowHist2['tipo'] == 'serv') {
-				$html .= ' <td>
-      <div align="center" style="color:#6886FD;">';
-				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
-					$html .=
-						'
-         <br>Asistencia Vial (Grua)<br>
-          809 699 2008';
-				}
-
-				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
-					$html .=
-						'
-          <br>Casa del Conductor <br>
-          809 381 2424';
-				}
-				$html .= '
-      </div>    
-    </td>';
-			}
-		}
-
-
-		$html .= '
-    </td> 
-</tr>
-
-
-
-<tr>
-  <td align="left" style="font-size:19px;">
   
-  <table cellpadding="1" width="135px" cellspacing="0">
-';
-
-		$Descp = mysql_query(
-			"select * from ticket_poliza WHERE id_aseg ='" . $row['id_aseg'] . "' LIMIT 4"
+		</table>
+		
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
+		<tr>
+		<td colspan="2" align="center"><br/>&nbsp;</td>
+		</tr>
+			    <tr>
+					<td style="width:130px;">
+			  <table cellpadding="1" border="0" style="font-size:20px; min-height:80px;">';
+		$Descp1 = mysql_query(
+			"select * from ticket_poliza WHERE id_aseg ='" .
+				$id_aseguradora .
+				"' LIMIT 4"
 		);
-		while ($rDescp = mysql_fetch_array($Descp)) {
+		while ($rDescp1 = mysql_fetch_array($Descp1)) {
 			$html .=
 				'     
-        <tr>
-			<td align="left">' .
-				$rDescp['ciudad'] .
+						<tr>
+							<td align="left">' .
+				$rDescp1['ciudad'] .
 				'</td>
-            <td align="left">' .
-				$rDescp['telefono'] .
+							<td align="left">' .
+				$rDescp1['telefono'] .
 				'</td>
-		</tr>';
+						</tr>';
 		}
-		$html .= ' 
+		$html .=
+			' 
+				 </table>
  
- </table> 
- 
-  </td>
-</tr>
-</table>
+		</td>
+
+
+				</tr>
+			
 					 </td>
 				</tr>
 		</table>
@@ -683,8 +656,22 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 
     </td>
   </tr>
+</table>
+  <tr>
+  	<td colspan="2">&nbsp;</td>
+  </tr>
 
-</table>';
+
+
+
+
+</td>
+	</tr>
+5
+</table>
+
+
+';
 		// set font
 	}
 }
