@@ -611,13 +611,8 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
     ';
-		$QueryH5 = mysql_query(
-			"select * from seguro_trans_history   
-	WHERE id_trans ='" .
-				$_GET['id_trans'] .
-				"'"
-		);
-		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
+
+		while ($RowHist2 = mysql_fetch_array($QueryH)) {
 			if ($RowHist2['tipo'] == 'serv') {
 				$html .= ' <td>
       <div align="center" style="color:#6886FD;">';
