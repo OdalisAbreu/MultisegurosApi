@@ -601,24 +601,51 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 &nbsp;&nbsp;5- Obtenga el nombre y dirección de los lesionados y testigos. <br>
 <br>
 <b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b><br>
-
 </td>
   </tr>
-  
 		</table>
 		
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
-		<tr>
-		<td colspan="2" align="center"><br/>&nbsp;</td>
-		</tr>
+<tr cellspacing="0">
+    <td align="left">
+    <td width="100px">
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
+    </td>
+    ';
+		$QueryH5 = mysql_query(
+			"select * from seguro_trans_history   
+	WHERE id_trans ='" .
+				$_GET['id_trans'] .
+				"'"
+		);
+		while ($RowHist2 = mysql_fetch_array($QueryH5)) {
+			if ($RowHist2['tipo'] == 'serv') {
+				$html .= ' <td>
+      <div align="center" style="color:#6886FD;">';
+				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Asistencia Vial (Grua)") {
+					$html .=
+						'
+         <br>Asistencia Vial (Grua)<br>
+          809 699 2008';
+				}
+
+				if (ServAdicHistory($RowHist2['id_serv_adc']) == "Casa del Conductor") {
+					$html .=
+						'
+          <br>Casa del Conductor <br>
+          809 381 2424';
+				}
+				$html .= '
+      </div>    
+    </td>';
+			}
+		}
+
+
+		$html .= '
+    </td> 
+</tr>
+
+
 			    <tr>
 					<td style="width:130px;">
 			  <table cellpadding="1" border="0" style="font-size:20px; min-height:80px;">';
