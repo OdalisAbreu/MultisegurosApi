@@ -605,10 +605,9 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 <tr cellspacing="0">
     <td align="left">
     <td width="100px">
-      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/> 
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/> ' . $RowHist2['tipo'] . '
     </td>
     ';
-		print($RowHist2['tipo']);
 		$QueryH5 = mysql_query(
 			"select * from seguro_trans_history   
 	WHERE id_trans ='" .
