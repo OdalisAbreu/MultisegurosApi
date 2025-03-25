@@ -608,6 +608,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
       <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
     ';
+		$html_servicios_opcionales;
 		$QueryH5 = mysql_query(
 			"select * from seguro_trans_history   
 	WHERE id_trans ='" .
