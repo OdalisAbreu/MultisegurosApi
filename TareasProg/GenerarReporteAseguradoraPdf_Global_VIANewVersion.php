@@ -609,7 +609,9 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
     </td>
 	</td> 
     ';
-		$html .= $html_servicios_opcionales_list;
+		if (!empty($html_servicios_opcionales)) {
+			$html .= $html_servicios_opcionales_list;
+		}
 		$html .= '
 </tr>
 
