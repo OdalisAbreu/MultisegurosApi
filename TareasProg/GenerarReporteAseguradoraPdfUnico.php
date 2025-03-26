@@ -493,13 +493,15 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 &nbsp;&nbsp;4- Obtenga el número de placa, aseguradora, y número de póliza. <br>
 &nbsp;&nbsp;5- Obtenga el nombre y dirección de los lesionados y testigos. <br>
 <br>
-<b>Comuníquese con la aseguradora antes de iniciar cualquier trámite:</b>
+<b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b>
+
 </td>
   </tr>
+
 <tr cellspacing="0">
     <td align="left">
-    <td width="80px">
-      <img src="' . $logo . $NombreImg . '"  alt="" width="80px"/>
+    <td width="100px">
+      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
     </td>
     ';
 $QueryH5 = mysql_query(
