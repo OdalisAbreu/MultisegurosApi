@@ -486,7 +486,6 @@ $html .=
     <td colspan="2" style="font-size:18px" align="left">
 El vehículo descrito en el anverso está asegurado bajo la póliza emitida por La Aseguradora, <br>
 sujeto a los términos, límites y condiciones que en ella se expresan y al pago de la prima. <br>
-<br>
 <b>En caso de accidente:</b> <br>
 &nbsp;&nbsp;1- Asista a los lesionados, si los hubiere. Con cuidado, retire los vehículos de la vía. <br>
 &nbsp;&nbsp;2- No acepte responsabilidad al momento del accidente; reserve su derecho. <br>
@@ -494,7 +493,7 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 &nbsp;&nbsp;4- Obtenga el número de placa, aseguradora, y número de póliza. <br>
 &nbsp;&nbsp;5- Obtenga el nombre y dirección de los lesionados y testigos. <br>
 <br>
-<b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b><br>
+<b>Comuníquese con la aseguradora antes de iniciar cualquier trámite</b>
 
 </td>
   </tr>
