@@ -500,8 +500,8 @@ sujeto a los términos, límites y condiciones que en ella se expresan y al pago
 
 <tr cellspacing="0">
     <td align="left">
-    <td width="100px">
-      <img src="' . $logo . $NombreImg . '"  alt="" width="100px"/>
+    <td width="80px">
+      <img src="' . $logo . $NombreImg . '"  alt="" width="80px"/>
     </td>
     ';
 $QueryH5 = mysql_query(
