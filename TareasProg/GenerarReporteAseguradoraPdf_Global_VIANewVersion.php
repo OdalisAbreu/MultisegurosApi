@@ -584,7 +584,7 @@ Las informaciones contenidas en este documento son las declaraciones y garantía
 					
 					
 					
-<table align="center" cellpadding="2" border="0"  width="250px">
+<table align="center" cellpadding="2" border="0"  width="350px">
   <tr>
     <td colspan="2" style="font-size:18px" align="left">
 El vehículo descrito en el anverso está asegurado bajo la póliza emitida por La Aseguradora, <br>
